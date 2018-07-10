@@ -22,6 +22,12 @@ Features
   distributions, or vintage systems such as BeOS or NEXTSTEP, and applications
   for these systems
 
+Downloads
+---------
+The latest _stable_ version of 86Box is v1.07, which was released on 21 February
+2017 and is terribly _outdated_. It is instead recommended to use the latest [nightly builds](https://github.com/86Box/86Box#nightly-builds) available from 
+our Jenkins instance, which include all features listed above.
+
 Help
 ----
 See [frequently asked questions](faq.html) for solutions to common problems with
