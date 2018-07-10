@@ -7,6 +7,8 @@ running old operating systems and software designed for IBM PC systems and
 compatibles from 1981 through fairly recent system designs based on the
 PCI bus.
 
+_Please note that this page is a work in progress._
+
 Features
 --------
 * Easy to use interface
