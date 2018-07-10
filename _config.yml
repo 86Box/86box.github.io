@@ -1,3 +1,9 @@
 title: "86Box"
 description: "Emulator of x86-based machines based on PCem"
 theme: jekyll-theme-cayman
+
+site.github.is_project_page: true
+site.github.repository_name: 86Box
+site.github.repository_url: https://github.com/86Box/86Box
+site.github.owner_name: OBattler
+site.github.owner_url: https://github.com/OBattler
