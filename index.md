@@ -32,7 +32,7 @@ our Jenkins instance, which include all features listed above.
 
 Help
 ----
-See [frequently asked questions](faq.html) for solutions to common problems with
+See [frequently asked questions](faq) for solutions to common problems with
 86Box, or join our IRC or Discord for assistance.
 
 Get in touch
