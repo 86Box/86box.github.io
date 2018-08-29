@@ -32,7 +32,7 @@ Get in touch
 ------------
 You can reach us on our IRC channel or our Discord server to discuss anything related to retro computing and of course 86Box. We look forward to hearing from you!
 
-[![Visit our IRC channel](https://kiwiirc.com/buttons/irc.rol.im/softhistory.png)](https://kiwiirc.com/client/irc.rol.im/?nick=github?#softhistory)
+[![Visit our IRC channel](https://kiwiirc.com/buttons/irc.ringoflightning.net/softhistory.png)](https://kiwiirc.com/client/irc.ringoflightning.net/?nick=github?#softhistory)
 
 [![Visit our Discord server](https://discordapp.com/api/guilds/262614059009048590/embed.png)](https://discord.gg/Es3TnUH)
 
