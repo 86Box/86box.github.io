@@ -18,7 +18,7 @@ Downloads
 ---------
 The latest _stable_ version of 86Box is v1.07, which was released on 21 February 2017 and is terribly _outdated_. It is instead recommended to use the latest [nightly builds](https://github.com/86Box/86Box#nightly-builds) available from our Jenkins instance, which include all features listed above.
 
-Also recommended is the [86Box Manager](https://github.com/86Box/86BoxManager), our officially endorsed 86Box configuration manager, developed by Overdoze. The latest stable version of 86Box Manager is 1.0.0.
+Also recommended is the [86Box Manager](https://github.com/86Box/86BoxManager), our officially endorsed 86Box configuration manager, developed by daviunic (Overdoze).
 
 System requirements
 -------------------
