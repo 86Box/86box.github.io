@@ -14,6 +14,6 @@ On the other side, 86Box is an _low-level emulator_. It implements a whole syste
 
 > ### Why does 86Box not have a Linux version like PCem does?
 
-Even though 86Box is based on PCem, its development began before the cross-platform wxWidgets frontend was introduced to PCem. Even though we would love to provide a Linux version, we currently lack developers knowledgeable with Linux GUI apps development. See the [issue tracker](https://github.com/86Box/86Box/issues/136) for more details.
+Even though 86Box is based on PCem, its development began before the cross-platform wxWidgets frontend was introduced to PCem. Even though we would love to provide a Linux version, we currently lack developers knowledgeable in Linux GUI apps development. See the [issue tracker](https://github.com/86Box/86Box/issues/136) for more details.
 
 [< Go back](index)
