@@ -18,13 +18,13 @@ Downloads
 ---------
 The latest _stable_ version of 86Box is v1.07, which was released on 21 February 2017 and is terribly _outdated_. It is instead recommended to use the latest [nightly builds](https://github.com/86Box/86Box#nightly-builds) available from our Jenkins instance, which include all features listed above.
 
-Also recommended is the [86Box Manager](https://github.com/86Box/86BoxManager), our officially endorsed 86Box configuration manager, developed by daviunic (Overdoze).
-
-System requirements
--------------------
+System requirements and recommendations
+---------------------------------------
 * Intel Core 2 or AMD Athlon 64 processor
 * Windows 7 Service Pack 1, Windows 8.1 or Windows 10
 * 4 GB of RAM
+
+It is also recommended to use the [86Box Manager](https://github.com/86Box/86BoxManager) by [daviunic](https://github.com/daviunic) (Overdoze) to manage virtual machines even though it is possible to use 86Box on its own with the `--vmpath`/`-P` command line option.
 
 Help
 ----
