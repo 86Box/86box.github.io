@@ -11,7 +11,7 @@ Here are the basic steps to help you get started with 86Box. The user interface 
 
 ### Step 1: Get the romset
 
-86Box relies on a bunch of external binary files, called ROMs, to emulate various hardware. Together, these files are known as the romset. If you try to start 86Box without one, you'll recieve an error and 86Box will close. You need to download the romset from [here](http://tinyurl.com/rs20181008) and extract the `roms` folder into the same folder where `86Box.exe` is located.
+86Box relies on a bunch of external binary files, called ROMs, to emulate various hardware. Together, these files are known as the romset. If you try to start 86Box without one, you'll recieve an error and 86Box will close. You need to download the romset from [here](https://tinyurl.com/rs20190213) and extract the `roms` folder into the same folder where `86Box.exe` is located.
 
 ### Step 2: Meet the main window
 
@@ -53,7 +53,7 @@ When you want to eject virtual media, click on the particular icon again and sel
 
 ### Step 6: What now?
 
-If you made it this far, you got the basics of using 86Box, but there's more features and options to explore. For example, you can try out [86Box Manager](github.com/86Box/86BoxManager) for easier management of multiple virtual machines. You can see what's under the [*View* menu](view) or look at some of the more obscure options in the settings.
+If you made it this far, you got the basics of using 86Box, but there's more features and options to explore. For example, you can try out [86Box Manager](github.com/86Box/86BoxManager) for easier management of multiple virtual machines. You can see what's under the [*View* menu](viewmenu) or look at some of the more obscure options in the settings.
 
 Keep in mind that because 86Box is constantly in development, various problems will come and go. If you think something's not working the way it should, consider submitting an issue here on GitHub or joining official support channels on Discord or IRC.
 
