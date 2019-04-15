@@ -26,6 +26,10 @@ System requirements and recommendations
 
 It is also recommended to use the [86Box Manager](https://github.com/86Box/86BoxManager) by [daviunic](https://github.com/daviunic) (Overdoze) to manage virtual machines even though it is possible to use 86Box on its own with the `--vmpath`/`-P` command line option.
 
+Getting started
+---------------
+If you're a new user, click [here](gettingstarted) to see a brief tutorial on how to configure everything so you can start working.
+
 Help
 ----
 See [frequently asked questions](faq) for solutions to common problems with 86Box or join our IRC or Discord for assistance.
