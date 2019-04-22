@@ -51,7 +51,15 @@ Icons will also flash a small green dot every now and then. This means the parti
 
 When you want to eject virtual media, click on the particular icon again and select *Eject* (for floppy and ZIP disks) or *Empty* (for CD-ROMs). The icon becomes semi-transparent again.
 
-### Step 6: What now?
+### Step 6: Mouse and keyboard interaction
+
+Now you're ready to do some stuff inside the emulated machine. Keyboard input is redirected there automatically whenever the emulator window has focus. All key presses and combinations will be redirected to the emulated machine.
+
+Mouse input has to be manually "captured" and "released". To capture the mouse in the emulated mahine, simply click inside the renderer area. Your host mouse cursor will disappear and your mouse movement and clicks will be redirected into the emulated machine. Now you can use the mouse inside the emulated machine (if the software and hardware configuration supports it of course).
+
+To release the mouse, press F8 and F12 simultaneously. You can also use the middle mouse button for this if the emulated mouse only has two buttons.
+
+### Step 7: What now?
 
 If you made it this far, you got the basics of using 86Box, but there's more features and options to explore. For example, you can try out [86Box Manager](github.com/86Box/86BoxManager) for easier management of multiple virtual machines. You can see what's under the [*View* menu](viewmenu) or look at some of the more obscure options in the settings.
 
