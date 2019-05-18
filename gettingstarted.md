@@ -16,9 +16,9 @@ Here are the basic steps to help you get started with 86Box. The user interface 
 ### Step 2: Meet the main window
 
 Once you got the romset in the right place, you can start `86Box.exe`. The main window has three important areas:
-* **the menu bar at the top**, where most commands and options are located
-* **the display area in the middle**, which is where the output from the emulated machine will be rendered
-* **and the status bar at the bottom**, containing icons for quickly accessing the configured peripheral devices
+* **The menu bar at the top**, where most commands and options are located
+* **The display area in the middle**, which is where the output from the emulated machine will be rendered
+* **The status bar at the bottom**, containing icons for quickly accessing the configured peripheral devices
 
 The *Action* menu has basic commands for controlling the emulated machine. You can cycle the power (also known as a *hard reset*), send the *CTRL+ALT+DEL* and *CTRL+ALT+ESC* keystrokes, pause the virtual machine or close it.
 
@@ -39,7 +39,7 @@ Once you've selected the hardware components you wish to emulate, you need to ma
 Now that you've configured everything, you're ready to run some software in your virtual machine. Maybe you want to install an operating system or play a booter game. In any case, you'll have to mount some virtual media to get going. You can do this with the icons in the status bar. Icons representing removable media appear semi-transparent when their associated drive is empty, and fully opaque when media is inserted.
 
 Depending on the hardware configuration you've chosen, you may or may not see the following icons in the status bar, from left to right:
-* **floppy disk:** the icon is different for 3.5" and 5.25" floppy disk drives. This also determines the kind of floppy disk images you can use with a particular drive. You can have up to 4 floppy drives configured, though BIOS limitations also apply. 
+* **Floppy disk:** the icon is different for 3.5" and 5.25" floppy disk drives. This also determines the kind of floppy disk images you can use with a particular drive. You can have up to 4 floppy drives configured, though BIOS limitations also apply. 
 To mount a floppy disk image, click on the floppy disk icon, select *Existing image...*, and select the disk image you wish to mount.
 * **CD-ROM:** this represents the CD-ROM drive you've configured, you can have up to 4 drives. To mount a disk image, click on the icon and select *Image...*, then select the image you wish to mount.
 * **ZIP disk:** represents the Iomega ZIP drive, also up to four drives. The mounting procedure is the same in this case as well, click on the icon, select *Existing image...* and select your ZIP disk image.
@@ -61,7 +61,7 @@ To release the mouse, press F8 and F12 simultaneously. You can also use the midd
 
 ### Step 7: What now?
 
-If you made it this far, you got the basics of using 86Box, but there's more features and options to explore. For example, you can try out [86Box Manager](github.com/86Box/86BoxManager) for easier management of multiple virtual machines. You can see what's under the [*View* menu](viewmenu) or look at some of the more obscure options in the settings.
+If you made it this far, you got the basics of using 86Box, but there's more features and options to explore. For example, you can try out [86Box Manager](https://github.com/86Box/86BoxManager) for easier management of multiple virtual machines. You can see what's under the [*View* menu](viewmenu) or look at some of the more obscure options in the settings.
 
 Keep in mind that because 86Box is constantly in development, various problems will come and go. If you think something's not working the way it should, consider submitting an issue here on GitHub or joining official support channels on Discord or IRC.
 
