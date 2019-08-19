@@ -11,21 +11,21 @@ See the groups below for your machine class and information on BIOS configuratio
 
 ### 8088 or 8086 class - no configuration required
 These machines do not require any BIOS configuration.
-* IBM PC and XT
 * AMI XT clone
 * DTK XT clone
-* Phoenix XT clone
-* Juko XT clone
 * Generic XT clone
-* Schneider EuroPC
-* Tandy 1000, 1000HX and 1000 SL/2
+* IBM PC and XT
+* Juko XT clone
 * Olivetti M24
+* Phoenix XT clone
+* Tandy 1000, 1000HX and 1000 SL/2
 
 ### 8088 or 8086 class - configuration required
-See each group for configuration specifics.
+See each machine/group for configuration specifics.
+* Amstrad PC1640, PC2086 and PC3086
+* Schneider EuroPC
 * Toshiba T1000
 * Toshiba T1200
-* Amstrad PC1640, PC2086 and PC3086
 
 ### 286 class
 See each machine/group for configuration specifics.
