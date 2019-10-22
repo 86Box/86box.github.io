@@ -16,7 +16,9 @@ Features
 
 Downloads
 ---------
-The latest _stable_ version of 86Box is v1.07, which was released on 21 February 2017 and is terribly _outdated_. It is instead recommended to use the latest [nightly builds](https://github.com/86Box/86Box#nightly-builds) available from our Jenkins instance, which include all features listed above.
+The latest stable version of 86Box is version 2.00, which was released on October 22nd, 2019, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/tag/v2.00).
+
+We also offer [nightly builds](https://github.com/86Box/86Box#nightly-builds), which are built off the latest source code, but may not be as stable and/or optimized as stable builds.
 
 System requirements and recommendations
 ---------------------------------------
