@@ -16,7 +16,7 @@ Features
 
 Downloads
 ---------
-The latest stable version of 86Box is version 2.04, which was released on October 31st, 2019, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/tag/v2.04).
+The latest stable version of 86Box is version 2.07, which was released on November 20, 2019, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/tag/v2.04).
 
 We also offer [nightly builds](https://github.com/86Box/86Box#nightly-builds), which are built off the latest source code, but may not be as stable and/or optimized as stable builds.
 
