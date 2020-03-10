@@ -11,7 +11,7 @@ Here are the basic steps to help you get started with 86Box. The user interface 
 
 ### Step 1: Get the romset
 
-86Box relies on a bunch of external binary files, called ROMs, to emulate various hardware. Together, these files are known as the romset. If you try to start 86Box without one, you'll recieve an error and 86Box will close. You need to download the romset from [here](https://tinyurl.com/rs20190213) and extract the `roms` folder into the same folder where `86Box.exe` is located.
+86Box relies on a bunch of external binary files, called ROMs, to emulate various hardware. Together, these files are known as the romset. If you try to start 86Box without one, you'll recieve an error and 86Box will close. You need to download the romset from [here](https://github.com/86Box/roms/releases/latest), create a subfolder named `roms` in the folder where `86Box.exe` is located, and extract it there.
 
 ### Step 2: Meet the main window
 
