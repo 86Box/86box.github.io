@@ -38,11 +38,18 @@ See [frequently asked questions](faq) for solutions to common problems with 86Bo
 
 Get in touch
 ------------
-You can reach us on our IRC channel or our Discord server to discuss anything related to retro computing and of course 86Box. We look forward to hearing from you!
+You can reach us on our IRC channel, Discord server or Twitter to discuss anything related to retro computing and, of course, 86Box. We look forward to hearing from you!
 
 [![Visit our IRC channel](https://kiwiirc.com/buttons/irc.ringoflightning.net/softhistory.png)](https://kiwiirc.com/client/irc.ringoflightning.net/?nick=github?#softhistory)
 
 [![Visit our Discord server](https://discordapp.com/api/guilds/262614059009048590/embed.png)](https://discord.gg/v5fCgFw)
+
+[Twitter: @86BoxEmulator](https://twitter.com/86BoxEmulator)*
+
+YouTube
+-------
+Our [YouTube channel](https://youtube.com/channel/UChBnf0oliV7Holdk6ILze_w)* contains detailed, high-quality 86Box tutorials and videos about various related topics.
+###### The YouTube channel and Twitter account are managed by staff member DDX (@DDXofficial).
 
 Licensing
 ---------
