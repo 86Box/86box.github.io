@@ -53,11 +53,9 @@ Our [YouTube channel](https://youtube.com/channel/UChBnf0oliV7Holdk6ILze_w)* con
 
 Donations
 ---------
-We do not charge you for the emulator but donations are still welcome:
-https://paypal.me/86Box.
+We do not charge you for the emulator but donations are still welcome: [https://paypal.me/86Box](https://paypal.me/86Box).
 
-You can now also support the project on Patreon:
-https://www.patreon.com/86box.
+You can now also support the project on Patreon: [https://www.patreon.com/86box](https://www.patreon.com/86box).
 
 Licensing
 ---------
