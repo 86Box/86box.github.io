@@ -51,6 +51,14 @@ YouTube
 Our [YouTube channel](https://youtube.com/channel/UChBnf0oliV7Holdk6ILze_w)* contains detailed, high-quality 86Box tutorials and videos about various related topics.
 ###### The YouTube channel and Twitter account are managed by staff member DDX (@DDXofficial).
 
+Donations
+---------
+We do not charge you for the emulator but donations are still welcome:
+https://paypal.me/86Box.
+
+You can now also support the project on Patreon:
+https://www.patreon.com/86box.
+
 Licensing
 ---------
 86Box is released under the [GNU General Public License, version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
