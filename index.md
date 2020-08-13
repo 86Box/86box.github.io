@@ -2,7 +2,13 @@
 layout: default
 ---
 
-**86Box** is a hypervisor and IBM PC system emulator that specializes in running old operating systems and software designed for IBM PC systems and compatibles from 1981 through fairly recent system designs based on the PCI bus.
+**86Box** is an IBM PC system emulator that specializes in running old operating systems and software designed for IBM PC systems and compatibles from 1981 through fairly recent system designs based on the PCI bus.
+
+The project maintainer is OBattler.
+
+Licensing
+---------
+86Box is released under the [GNU General Public License, version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
 
 Features
 --------
@@ -18,7 +24,7 @@ Downloads
 ---------
 The latest stable version of 86Box is version 2.07, which was released on November 20, 2019, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/tag/v2.07).
 
-We also offer [nightly builds](https://github.com/86Box/86Box#nightly-builds), which are built off the latest source code, but may not be as stable and/or optimized as stable builds.
+We also offer [nightly builds](https://github.com/86Box/86Box#automatic-builds), which are built from the latest source code, but may not be as stable and/or optimized as stable builds.
 
 System requirements and recommendations
 ---------------------------------------
@@ -30,7 +36,7 @@ It is also recommended to use the [86Box Manager](https://github.com/86Box/86Box
 
 Getting started
 ---------------
-If you're a new user, click [here](gettingstarted) to see a brief tutorial on how to configure everything so you can start working.
+If you're a new user, click [here](https://86box.readthedocs.io/en/latest/) to see our documentation about the emulator's features and user interface.
 
 Help
 ----
@@ -56,7 +62,3 @@ Donations
 We do not charge you for the emulator but donations are still welcome: [https://paypal.me/86Box](https://paypal.me/86Box).
 
 You can now also support the project on Patreon: [https://www.patreon.com/86box](https://www.patreon.com/86box).
-
-Licensing
----------
-86Box is released under the [GNU General Public License, version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
