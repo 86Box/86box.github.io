@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: index
+title: "Emulator of retro x86-based machines"
 ---
 
 **86Box** is an IBM PC system emulator that specializes in running old operating systems and software designed for IBM PC systems and compatibles from 1981 through fairly recent system designs based on the PCI bus.

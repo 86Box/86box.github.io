@@ -1,0 +1,8 @@
+{% capture title_override %}Blog: {{ page.title }}{% endcapture %}
+{% include header.html %}
+		<main>
+			{% include postheader.html post=page %}
+			<p></p>
+			{{ content }}
+		</main>
+{% include footer.html %}

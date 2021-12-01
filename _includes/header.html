@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>86Box | {{ title_override | default: page.title }}</title>
+		<meta charset="utf-8" />
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:creator" content="86Box" />
+		<meta name="twitter:description" content="{{ page.description }}" />
+		<meta property="og:site_name" content="86Box" />
+		<meta property="og:title" content="{{ page.title }}" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" itemprop="image" content="{{ page.image | default: "/avaicon.png" }}" />
+		<meta property="og:description" content="{{ page.description }}" />
+		<link rel="icon" href="/favicon.png" type="image/png">
+		<meta name="theme-color" content="#ff4848">
+		<meta name="viewport" content="width=640, initial-scale=1.0">
+		<link rel="stylesheet" href="/assets/css/style.css">
+		<link rel="stylesheet" href="/assets/css/fonts.css">
+		<script> </script>
+	</head>
+	<body>
+		<header>
+			<a href="/"><img src="/avaicon.png" id="icon" /><img src="/assets/images/86box-logo.png" id="logo" /></a>
+		</header>
+		<nav>
+			<a href="https://github.com/86Box/86Box#automatic-builds">Downloads</a>
+			<a href="https://86box.readthedocs.io/en/latest/index.html">Docs</a>
+			<a href="/blog.html">Blog</a>
+			<a href="https://github.com/86Box/86Box">GitHub</a>
+		</nav>
