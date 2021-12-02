@@ -146,5 +146,19 @@ img#icon {
 /* Blog */
 hr {
 	border-color: #808080;
-    width: 100%;
+	width: 100%;
+}
+table {
+	border: 1px solid #808080;
+}
+td {
+	border: 1px solid #808080;
+	padding: 5px;
+}
+code {
+	font-size: 11pt;
+	background: #404040;
+	border-radius: 3pt;
+	padding-left: 3pt;
+	padding-right: 3pt;
 }
