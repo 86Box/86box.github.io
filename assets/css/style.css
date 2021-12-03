@@ -148,12 +148,34 @@ hr {
 	border-color: #808080;
 	width: 100%;
 }
+div.scroll {
+	max-height: 500px;
+	padding-right: 1px; /* make border less ugly on Chrome on Windows */
+	overflow-y: scroll;
+}
+@media (max-width: 768px) {
+	div.scroll {
+		max-width: 100vh-60pt;
+		overflow-x: scroll;
+	}
+}
 table {
 	border: 1px solid #808080;
 }
-td {
+tr:nth-child(odd) {
+	background: #1c293a;
+}
+th, td {
 	border: 1px solid #808080;
 	padding: 5px;
+}
+div.scroll > table > thead > tr > th {
+	position: sticky;
+	top: 0;
+	background: #1c293a;
+}
+div.td2nowrap > table > tbody > tr > td:nth-child(2) {
+	white-space: nowrap;
 }
 code {
 	font-size: 11pt;
