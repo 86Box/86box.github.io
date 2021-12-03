@@ -11,20 +11,27 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:image" itemprop="image" content="{{ page.image | default: "/avaicon.png" }}" />
 		<meta property="og:description" content="{{ page.description }}" />
+		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="icon" href="/favicon.png" type="image/png">
 		<meta name="theme-color" content="#ff4848">
 		<meta name="viewport" content="width=640, initial-scale=0.5">
-		<link rel="stylesheet" href="/assets/css/style.css">
-		<link rel="stylesheet" href="/assets/css/fonts.css">
+		<!--[if !IE]><!-->
+			<link rel="stylesheet" href="/assets/css/style.css">
+			<link rel="stylesheet" href="/assets/css/fonts.css">
+		<!--<![endif]-->
+		<!--[if IE]>
+			<script src="/assets/js/style-reduced.js"></script>
+			<link rel="stylesheet" href="/assets/css/style-reduced.css">
+		<![endif]-->
 		<link rel="alternate" type="application/atom+xml" title="Blog posts" href="/feed.xml" />
 	</head>
 	<body>
 		<header>
-			<a href="/"><img src="/avaicon.png" id="icon" /><img src="/assets/images/86box-logo.png" id="logo" /></a>
+			<a href="/"><img src="/avaicon.png" id="icon" alt="86Box icon" /><img src="/assets/images/86box-logo.png" id="logo" alt="86Box logo" /></a>
 		</header>
 		<nav>
-			<a href="/#downloads">Downloads</a>
-			<a href="https://86box.readthedocs.io/en/latest/index.html">Docs</a>
-			<a href="/blog.html">Blog</a>
-			<a href="https://github.com/86Box/86Box">GitHub</a>
+			<a class="navlink" href="/#downloads">Downloads</a>
+			<a class="navlink" href="https://86box.readthedocs.io/en/latest/index.html">Docs</a>
+			<a class="navlink" href="/blog.html">Blog</a>
+			<a class="navlink" href="https://github.com/86Box/86Box">GitHub</a>
 		</nav>

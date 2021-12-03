@@ -1,6 +1,6 @@
-<figure class="image" style="text-align: center;">
-  <a href="{{ include.url }}" target="_blank"><img src="{{ include.url }}" alt="{{ include.description }}" style="max-width: 100%; width: auto; height: auto;" /></a>
+<figure class="image">
+  <a href="{{ include.url }}" target="_blank"><img class="image" src="{{ include.url }}" alt="{{ include.description }}" /></a>
 {% if include.description %}
-  <figcaption>{{ include.description }}</figcaption>
+  <figcaption><div class="imagecaption">{{ include.description }}</div></figcaption>
 {% endif %}
 </figure>

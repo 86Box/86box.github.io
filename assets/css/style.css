@@ -41,6 +41,10 @@ body > header {
 	grid-area: head;
 	padding: 30pt 30pt;
 }
+img#icon {
+	max-height: 75px;
+	padding-right: 20pt;
+}
 body > nav {
 	/* background-color: #ffa08c; */
 	grid-area: nav;
@@ -98,8 +102,11 @@ body > footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #8c9dbb; 
+	color: #8c9dbb;
 	font-size: 11pt;
+}
+body > footer > div > #reduced {
+	display: none;
 }
 @media (max-width: 768px) {
     body > footer {
@@ -138,15 +145,33 @@ a:hover {
 a:active {
 	color: #cecece;
 }
-img#icon {
-	max-height: 75px;
-	padding-right: 20pt;
+div#socialold {
+	display: none;
 }
 
 /* Blog */
+figure.image {
+	text-align: center;
+}
+img.heading {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+img.image {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+div.imagecaption {
+	display: inline;
+}
 hr {
 	border-color: #808080;
 	width: 100%;
+}
+span.emoji {
+	font-family: Tweemoji Mozilla; /* work around Windows' lack of flags where supported (Firefox) */
 }
 div.scroll {
 	max-height: 500px;

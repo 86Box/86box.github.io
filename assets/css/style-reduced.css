@@ -1,0 +1,104 @@
+/* Reduced stylesheet for retro browsers (targeting Internet Explorer 6). */
+
+/* Global Defaults */
+html {
+	color: #f9f9f9;
+	font-family: "Source Code Pro", monospace;
+}
+
+/* Body Layout */
+body {
+	background: #212e40;
+	margin: 12px 8px;
+}
+
+/* Page Layout */
+img {
+	border: none;
+}
+img#icon, img#logo {
+	height: 70px;
+	padding-right: 20pt;
+}
+a.navlink {
+	font-size: 15pt;
+	margin: 6pt;
+}
+header, nav { /* N/A on IE6 */
+	padding-bottom: 20pt;
+}
+div#footer {
+	background-color: #2b496f;
+	text-align: center;
+	color: #8c9dbb;
+	padding: 10pt;
+	font-size: 11pt;
+}
+
+/* Buttons */
+button {
+	color: #0f1934;
+	background-color: #f9f9f9;
+	font: bold 16px "Source Code Pro", monospace;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 4px; /* N/A on IE6 */
+	padding: 9px 0px;
+	border: 1px solid #f9f9f9;
+}
+
+/* Links */
+a {
+	color: #b9d3e8;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	color: white;
+}
+a:active {
+	color: #cecece;
+}
+div#socialnew {
+	display: none;
+}
+
+/* Blog */
+img.heading, img.image {
+	text-align: center;
+	max-width: 100%; /* N/A on IE6 */
+	width: expression((getNaturalWidth(this) >= (document.body.clientWidth - 16)) ? "100%" : "auto");
+	display: block;
+	margin-top: 10pt;
+	margin-bottom: 5pt;
+}
+div.imagecaption {
+	text-align: center;
+	margin-bottom: 10pt;
+}
+hr {
+	border-color: #808080;
+	width: 100%;
+}
+span.emoji {
+	display: none;
+}
+div.scroll {
+	max-height: 500px;
+	padding-right: 1px;
+	overflow-y: scroll;
+}
+table {
+	border: 1px solid #808080;
+}
+th, td {
+	border: 1px solid #808080;
+	padding: 5px;
+}
+code {
+	font-size: 11pt;
+	background: #404040;
+	padding-left: 3pt;
+	padding-right: 3pt;
+}

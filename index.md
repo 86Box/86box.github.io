@@ -47,9 +47,17 @@ Get in touch
 ------------
 You can reach us on our IRC channel, Discord server or Twitter to discuss anything related to retro computing and, of course, 86Box. We look forward to hearing from you!
 
+<div id="socialnew" markdown="block">
+
 [![Visit our IRC channel](https://kiwiirc.com/buttons/irc.ringoflightning.net/softhistory.png)](https://kiwiirc.com/client/irc.ringoflightning.net/?nick=github?#softhistory)
 
 [![Visit our Discord server](https://discordapp.com/api/guilds/262614059009048590/embed.png)](https://discord.gg/v5fCgFw)
+
+</div><div id="socialold" markdown="block">
+
+[Visit our IRC channel](irc://irc.ringoflightning.net/#softhistory) (requires an IRC client)
+
+</div>
 
 [Twitter: @86BoxEmulator](https://twitter.com/86BoxEmulator)*
 
