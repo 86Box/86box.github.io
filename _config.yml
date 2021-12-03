@@ -7,3 +7,6 @@ github:
   repository_url: https://github.com/86Box/86Box
   owner_name: OBattler
   owner_url: https://github.com/OBattler
+
+plugins:
+  - jekyll-feed
