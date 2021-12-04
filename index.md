@@ -13,7 +13,7 @@ Features
 --------
 * Easy to use interface
 * Cycle-accurate low level emulation of 8086-based processors up to the Pentium
-* Great range of customizability of virtual machines
+* Great range of customizability of emulated machines
 * Many available systems, such as the very first IBM PC 5150 from 1981, or the more obscure IBM PS/2 line of systems based on the Micro Channel Architecture
 * Lots of supported peripherals including video adapters, sound cards, network adapters, hard disk controllers, and SCSI adapters
 * MIDI output to Windows built-in MIDI support, FluidSynth, or emulated Roland synthesizers
@@ -31,7 +31,7 @@ System requirements and recommendations
 * Windows 7 Service Pack 1, Windows 8.1 or Windows 10
 * 4 GB of RAM
 
-It is also recommended to use the [86Box Manager](https://github.com/86Box/86BoxManager) by [daviunic](https://github.com/daviunic) (Overdoze) to manage virtual machines even though it is possible to use 86Box on its own with the `--vmpath`/`-P` command line option.
+It is also recommended to use the [86Box Manager](https://github.com/86Box/86BoxManager) by [daviunic](https://github.com/daviunic) (Overdoze) to manage emulated machines even though it is possible to use 86Box on its own with the `--vmpath`/`-P` command line option.
 
 Getting started
 ---------------
@@ -47,13 +47,13 @@ You can reach us on our IRC channel, Discord server or Twitter to discuss anythi
 
 <div id="socialnew" markdown="block">
 
-[![Visit our IRC channel](https://kiwiirc.com/buttons/irc.ringoflightning.net/softhistory.png)](https://kiwiirc.com/client/irc.ringoflightning.net/?nick=github?#softhistory)
+[![Visit our IRC channel](https://kiwiirc.com/buttons/irc.ringoflightning.net/86Box.png)](https://kiwiirc.com/client/irc.ringoflightning.net/?nick=website?#86Box)
 
 [![Visit our Discord server](https://discordapp.com/api/guilds/262614059009048590/embed.png)](https://discord.gg/v5fCgFw)
 
 </div><div id="socialold" markdown="block">
 
-[Visit our IRC channel](irc://irc.ringoflightning.net/#softhistory) (requires an IRC client)
+[Visit our IRC channel](irc://irc.ringoflightning.net/#86Box) (requires an IRC client)
 
 </div>
 
