@@ -19,6 +19,7 @@ function getNaturalWidth(img) {
 
 /* Allow HTML5 elements to be styled. */
 document.createElement('nav');
+document.createElement('hero');
 document.createElement('main');
 document.createElement('footer');
 

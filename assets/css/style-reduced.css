@@ -34,7 +34,7 @@ nav { /* requires JS on IE6 */
 	height: 70px;
 	vertical-align: middle;
 }
-main { /* requires JS on IE6 */
+hero, main { /* requires JS on IE6 */
 	display: block;
 	padding: 5pt 0pt;
 }
