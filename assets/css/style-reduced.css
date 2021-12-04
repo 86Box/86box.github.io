@@ -24,10 +24,17 @@ a.navlink {
 	font-size: 15pt;
 	margin: 6pt;
 }
-header, nav { /* N/A on IE6 */
-	padding-bottom: 20pt;
+nav { /* requires JS on IE6 */
+	display: table-cell;
+	height: 70px;
+	vertical-align: middle;
 }
-div#footer {
+main { /* requires JS on IE6 */
+	display: block;
+	padding: 5pt 0pt;
+}
+footer { /* requires JS on IE6 */
+	display: block;
 	background-color: #2b496f;
 	text-align: center;
 	color: #8c9dbb;
@@ -68,7 +75,7 @@ div#socialnew {
 img.heading, img.image {
 	text-align: center;
 	max-width: 100%; /* N/A on IE6 */
-	width: expression((getNaturalWidth(this) >= (document.body.clientWidth - 16)) ? "100%" : "auto");
+	width: expression((getNaturalWidth(this) >= (document.body.clientWidth - 16)) ? "100%" : "auto"); /* requires JS */
 	display: block;
 	margin-top: 10pt;
 	margin-bottom: 5pt;
