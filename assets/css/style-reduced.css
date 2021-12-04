@@ -3,7 +3,7 @@
 /* Global Defaults */
 html {
 	color: #f9f9f9;
-	font-family: "Source Code Pro", monospace;
+	font-family: "Source Code Pro", "Courier New", "Courier", monospace;
 }
 
 /* Body Layout */
@@ -51,7 +51,7 @@ div#footer {
 button {
 	color: #0f1934;
 	background-color: #f9f9f9;
-	font: bold 16px "Source Code Pro", monospace;
+	font: bold 16px "Source Code Pro", "Courier New", "Courier", monospace;
 	text-align: center;
 	text-transform: uppercase;
 	border: none;
