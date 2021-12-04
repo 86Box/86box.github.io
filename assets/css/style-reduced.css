@@ -1,4 +1,4 @@
-/* Reduced stylesheet for retro browsers (targeting Internet Explorer 6). */
+/* Reduced stylesheet for retro browsers, mostly targeting Internet Explorer 6. */
 
 /* Global Defaults */
 html {
@@ -26,8 +26,11 @@ a.navlink {
 	font-size: 15pt;
 	margin: 6pt;
 }
+header { /* N/A on IE6 */
+	display: inline;
+}
 nav { /* requires JS on IE6 */
-	display: table-cell;
+	display: inline;
 	height: 70px;
 	vertical-align: middle;
 }
