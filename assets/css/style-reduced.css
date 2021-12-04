@@ -38,7 +38,7 @@ main { /* requires JS on IE6 */
 	display: block;
 	padding: 5pt 0pt;
 }
-footer { /* requires JS on IE6 */
+div#footer {
 	display: block;
 	background-color: #2b496f;
 	text-align: center;
