@@ -111,6 +111,6 @@ th, td {
 code {
 	font-size: 11pt;
 	background: #404040;
-	padding-left: 3pt;
-	padding-right: 3pt;
+	border-radius: 3pt; /* N/A on IE6 */
+	padding: 0pt 3pt;
 }
