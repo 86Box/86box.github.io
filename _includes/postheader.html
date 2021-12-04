@@ -1,2 +1,5 @@
-<h1><a href="{{ include.post.url }}">{{ include.post.title }}</a></h1>
-<span>{{ include.post.date | date_to_string }} - written by <a href="https://github.com/{{ include.post.author }}">{{ include.post.author }}</a></span>
+{% if include.post.title == page.title %}<h1>{% else %}<h2><a href="{{ include.post.url }}">{% endif %}
+{{ include.post.title }}
+{% if include.post.title == page.title %}</h1><span>{% else %}</a></h2><small>{% endif %}
+{{ include.post.date | date: "%B %-d, %Y" }} - written by <a href="https://github.com/{{ include.post.author }}">{{ include.post.author }}</a>
+{% if include.post.title == page.title %}</span>{% else %}</small>{% endif %}
