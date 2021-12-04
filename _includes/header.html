@@ -8,7 +8,13 @@
 		<meta name="twitter:description" content="{{ page.description }}" />
 		<meta property="og:site_name" content="86Box" />
 		<meta property="og:title" content="{{ page.title }}" />
+{% if page.layout == "post" %}
+		<meta property="og:type" content="article" />
+		<meta property="og:published_time" content="{{ page.date | date: "%F" }}" />
+		<meta property="article:author:username" content="{{ page.author }}" />
+{% else %}
 		<meta property="og:type" content="website" />
+{% endif %}
 		<meta property="og:image" itemprop="image" content="{{ page.image | default: "/avaicon.png" }}" />
 		<meta property="og:description" content="{{ page.description }}" />
 		<link rel="shortcut icon" href="/favicon.ico">
