@@ -92,7 +92,7 @@ span.emoji {
 	display: none;
 }
 div.scroll {
-	max-height: 500px;
+	height: expression(Math.min(document.documentElement.clientHeight - 20, 500) + "px");
 	padding-right: 1px;
 	overflow-y: scroll;
 }
