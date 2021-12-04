@@ -9,7 +9,7 @@ html {
 /* Body Layout */
 body {
 	background: url("/assets/images/starsky.png");
-	background-repeat: no-repeat;
+	background-repeat: repeat-x;
 	background-color: #212e40;
 	margin: 12px 8px;
 }
