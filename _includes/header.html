@@ -10,7 +10,8 @@
 		<meta property="og:title" content="{{ page.title }}" />
 {% if page.layout == "post" %}
 		<meta property="og:type" content="article" />
-		<meta property="og:published_time" content="{{ page.date | date: "%F" }}" />
+		<meta property="og:published_time" content="{{ page.date | date: "%FT%TZ" }}" />
+		<meta property="article:author" content="https://github.com/{{ page.author }}" />
 		<meta property="article:author:username" content="{{ page.author }}" />
 {% else %}
 		<meta property="og:type" content="website" />
