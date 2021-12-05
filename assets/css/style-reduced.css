@@ -20,7 +20,7 @@ img {
 }
 img#icon, img#logo {
 	height: 70px;
-	padding-right: 20pt;
+	margin-right: 20pt;
 }
 a.navlink {
 	font-size: 15pt;
