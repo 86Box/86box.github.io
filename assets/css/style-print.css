@@ -1,0 +1,83 @@
+/* Reduced stylesheet for printing on both retro and modern browsers. */
+
+/* Global Defaults */
+html {
+	font-family: "Source Code Pro", "Courier New", "Courier", monospace;
+	break-inside: avoid;
+	page-break-inside: avoid;
+}
+
+/* Page Layout */
+header {
+	text-align: center;
+}
+img {
+	border: none;
+}
+img#icon {
+	height: 76px;
+	margin-right: 20pt;
+}
+nav {
+	display: none;
+}
+hero, main {
+	padding: 5pt 0pt;
+}
+footer, div#footer {
+	display: none;
+}
+
+/* Links */
+a, a:visited {
+	color: #000080;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Blog */
+figure.image {
+	text-align: center;
+}
+img.heading {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+img.image {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+div.imagecaption {
+	display: inline;
+}
+hr {
+	border-color: #808080;
+	width: 100%;
+}
+table {
+	border: 1px solid #808080;
+}
+th, td {
+	border: 1px solid #808080;
+	padding: 5px;
+}
+code {
+	font-size: 11pt;
+	color: #ffffff;
+	background: #404040 !important;
+	border-radius: 3pt;
+	padding-left: 3pt;
+	padding-right: 3pt;
+	-webkit-print-color-adjust: exact;
+}
+
+/* Advanced features here, to avoid upsetting retro browsers. */
+tr:nth-child(odd) {
+	background: #f0f0f0;
+	-webkit-print-color-adjust: exact;
+}
+div.td2nowrap > table > tbody > tr > td:nth-child(2) {
+	white-space: nowrap;
+}
