@@ -19,9 +19,9 @@ Features
 * MIDI output to Windows built-in MIDI support, FluidSynth, or emulated Roland synthesizers
 * Supports running MS-DOS, older Windows versions, OS/2, many Linux distributions, or vintage systems such as BeOS or NEXTSTEP, and applications for these systems
 
-Downloads
----------
-<a name="downloads" />The latest stable version of 86Box is **v3.0**, which was released on December 1, 2021, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/tag/v3.0).
+<a name="downloads" />Downloads
+-------------------------------
+The latest stable version of 86Box is **v3.0**, which was released on December 1, 2021, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/tag/v3.0).
 
 We also offer [nightly builds](https://github.com/86Box/86Box#automatic-builds), which are built from the latest source code, but may not be as stable and/or optimized as stable builds.
 
@@ -41,8 +41,8 @@ Help
 ----
 See [frequently asked questions](faq) for solutions to common problems with 86Box or join our IRC or Discord for assistance.
 
-Get in touch
-------------
+<a name="social" />Get in touch
+-------------------------------
 You can reach us on our IRC channel, Discord server or Twitter to discuss anything related to retro computing and, of course, 86Box. We look forward to hearing from you!
 
 <div id="socialnew" markdown="block">
