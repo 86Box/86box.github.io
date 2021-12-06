@@ -23,12 +23,16 @@
 		<meta name="theme-color" content="#ff4848">
 		<meta name="viewport" content="width=640, initial-scale=0.5">
 		<!--[if !IE]><!-->
-			<link rel="stylesheet" href="/assets/css/style.css">
+			<link rel="stylesheet" href="/assets/css/style.css" media="screen">
+			<link rel="stylesheet" href="/assets/css/style-print.css" media="print">
 			<link rel="stylesheet" href="/assets/css/fonts.css">
 		<!--<![endif]-->
 		<!--[if IE]>
 			<script src="/assets/js/style-reduced.js"></script>
-			<link rel="stylesheet" href="/assets/css/style-reduced.css">
+			<link rel="stylesheet" href="/assets/css/style-reduced.css" media="screen">
+			<!--[if gte IE 5]>
+				<link rel="stylesheet" href="/assets/css/style-print.css" media="print">
+			<![endif]-->
 		<![endif]-->
 		<link rel="alternate" type="application/atom+xml" title="Blog posts" href="/feed.xml" />
 	</head>

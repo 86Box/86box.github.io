@@ -15,6 +15,9 @@ body {
 }
 
 /* Page Layout */
+header { /* N/A on IE6 */
+	display: inline;
+}
 img {
 	border: none;
 }
@@ -26,9 +29,6 @@ a.navlink {
 	font-size: 15pt;
 	margin: 6pt;
 }
-header { /* N/A on IE6 */
-	display: inline;
-}
 nav { /* requires JS on IE6 */
 	display: inline;
 	height: 70px;
@@ -36,7 +36,7 @@ nav { /* requires JS on IE6 */
 }
 hero, main { /* requires JS on IE6 */
 	display: block;
-	padding: 5pt 0pt;
+	margin: 5pt 0pt;
 }
 div#footer {
 	display: block;

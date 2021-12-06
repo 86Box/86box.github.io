@@ -1,7 +1,7 @@
 /* Global Defaults */
 html {
 	color: #f9f9f9;
-	font-family: "Source Code Pro", monospace;
+	font-family: "Source Code Pro", "Courier New", "Courier", monospace;
 }
 
 /* Body Layout */
@@ -21,13 +21,13 @@ body {
 }
 @media (max-width: 768px) {
 	body {
-        grid-template-rows: auto auto 1fr auto auto 70px;
+		grid-template-rows: auto auto 1fr auto auto 70px;
 		grid-template-areas: "head head head"
-                             "nav nav nav"
-				        	 "hero hero hero"
-	           				 "main main main"
-	           				 "about about about"
-	           				 "foot foot foot";
+							 "nav nav nav"
+							 "hero hero hero"
+							 "main main main"
+							 "about about about"
+							 "foot foot foot";
 	}
 }
 @keyframes backgroundScroll {
@@ -58,18 +58,18 @@ body > nav > a {
 	margin: 0 20pt;
 }
 @media (max-width: 768px) {
-    body > header {
-        text-align: center;
-    }
-    body > header > img {
-        max-width: 100%;
-        width: auto;
-        height: auto;
-    }
-    body > nav {
-        justify-content: center;
-        font-size: 25pt;
-    }
+	body > header {
+		text-align: center;
+	}
+	body > header > img {
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+	body > nav {
+		justify-content: center;
+		font-size: 25pt;
+	}
 }
 
 body > hero {
@@ -109,10 +109,10 @@ body > footer > div > #reduced {
 	display: none;
 }
 @media (max-width: 768px) {
-    body > footer {
-    	padding: 10pt;
-    	font-size: 20pt;
-    }
+	body > footer {
+		padding: 10pt;
+		font-size: 20pt;
+	}
 }
 
 /* Buttons */
