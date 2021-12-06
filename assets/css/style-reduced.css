@@ -105,7 +105,7 @@ table {
 	border: 1px solid #808080;
 }
 tr:hover { /* N/A on IE6 */
-	background: #404040;
+	background: #202040;
 }
 th, td {
 	border: 1px solid #808080;
