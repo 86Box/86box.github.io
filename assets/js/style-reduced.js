@@ -23,21 +23,27 @@ document.createElement('hero');
 document.createElement('main');
 document.createElement('footer');
 
-window.onload = function() {
-	/* Make the logo transparent on IE6. Doing this on more
-	   images interferes with the auto-sizing CSS expression. */
-	if (document.all && /MSIE (5\.5|6)/.test(navigator.userAgent)) {
-		for (var i = 0; i < Math.min(2, document.images.length); i++) {
-			var img = document.images[i];
-			img.style.paddingRight = 0; /* padding counts as space for AlphaImageLoader so swap it for margin */
-			var oldsrc = img.src;
-			var oldw = img.clientWidth;
-			var oldh = img.clientHeight;
-			img.src = '/assets/images/blank.gif';
-			img.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + oldsrc + "', sizingMethod='scale')";
-			img.style.width = oldw + 'px';
-			img.style.height = oldh + 'px';
-			img.style.marginRight = '20pt';
-		}
+/* Make the logo transparent on IE6. Doing this on more
+   images interferes with the auto-sizing CSS expression. */
+function fixPngs() {
+	/* Check if the icon and logo are loaded, and try
+	   again after a while if they're not present yet. */
+	if (!document.images || (document.images.length < 2))
+		setTimeout(fixPngs, 500);
+
+	/* Fix icon and logo. */
+	for (var i = 0; i < Math.min(2, document.images.length); i++) {
+		var img = document.images[i];
+		img.style.paddingRight = 0; /* padding counts as space for AlphaImageLoader so swap it for margin */
+		var oldsrc = img.src;
+		var oldw = img.clientWidth;
+		var oldh = img.clientHeight;
+		img.src = '/assets/images/blank.gif';
+		img.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + oldsrc + "', sizingMethod='scale')";
+		img.style.width = oldw + 'px';
+		img.style.height = oldh + 'px';
+		img.style.marginRight = '20pt';
 	}
-};
+}
+if (document.all && /MSIE (5\.5|6)/.test(navigator.userAgent))
+	fixPngs();
