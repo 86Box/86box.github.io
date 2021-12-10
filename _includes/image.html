@@ -1,5 +1,5 @@
 <figure class="image">
-  <a href="{{ include.url }}" target="_blank"><img class="image" src="{{ include.url }}" alt="{{ include.description }}" /></a>
+  <a href="{{ include.url }}" target="_blank"><img class="image" src="{{ include.thumbnail | default: include.url }}" alt="{{ include.description }}" /></a>
 {% if include.description %}
   <figcaption><div class="imagecaption">{{ include.description }}</div></figcaption>
 {% endif %}
