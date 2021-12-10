@@ -11,8 +11,10 @@
 {% if page.layout == "post" %}
 		<meta property="og:type" content="article" />
 		<meta property="og:published_time" content="{{ page.date | date: "%FT%TZ" }}" />
-		<meta property="article:author" content="https://github.com/{{ page.author }}" />
-		<meta property="article:author:username" content="{{ page.author }}" />
+{% for author in page.authors %}
+		<meta property="article:author" content="https://github.com/{{ author }}" />
+		<meta property="article:author:username" content="{{ author }}" />
+{% endfor %}
 {% else %}
 		<meta property="og:type" content="website" />
 {% endif %}
