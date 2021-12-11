@@ -150,7 +150,7 @@ div#socialold {
 }
 
 /* Blog */
-figure.image {
+.image {
 	text-align: center;
 }
 img.heading {
@@ -211,4 +211,15 @@ code {
 	border-radius: 3pt;
 	padding-left: 3pt;
 	padding-right: 3pt;
+}
+iframe {
+	display: block;
+	border: none;
+}
+iframe.youtube {
+	text-align: center;
+	margin: auto;
+	width: 640px;
+	height: 360px;
+	padding-bottom: 8pt;
 }

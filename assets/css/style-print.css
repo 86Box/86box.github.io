@@ -36,7 +36,7 @@ a, a:visited {
 }
 
 /* Blog */
-figure.image {
+.image {
 	text-align: center;
 }
 img.heading {
@@ -71,6 +71,20 @@ code {
 	padding-left: 3pt;
 	padding-right: 3pt;
 	-webkit-print-color-adjust: exact;
+}
+iframe {
+	display: block;
+	border: none;
+}
+iframe.youtube {
+	text-align: center;
+	margin: auto;
+	width: 640px;
+	height: 64px;
+	padding-bottom: 8pt;
+}
+button.ytp-button {
+	display: none;
 }
 
 /* Advanced features here, to avoid upsetting retro browsers. */

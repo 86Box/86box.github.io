@@ -117,3 +117,10 @@ code {
 	border-radius: 3pt; /* N/A on IE6 */
 	padding: 0pt 3pt;
 }
+iframe {
+	display: block;
+	border: none;
+}
+iframe.youtube {
+	display: none;
+}
