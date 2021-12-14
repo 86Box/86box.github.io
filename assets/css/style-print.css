@@ -36,6 +36,10 @@ a, a:visited {
 }
 
 /* Blog */
+main.blog {
+	text-align: justify;
+	text-justify: inter-word;
+}
 .image {
 	text-align: center;
 }
@@ -82,9 +86,6 @@ iframe.youtube {
 	width: 640px;
 	height: 64px;
 	padding-bottom: 8pt;
-}
-button.ytp-button {
-	display: none;
 }
 
 /* Advanced features here, to avoid upsetting retro browsers. */

@@ -150,8 +150,15 @@ div#socialold {
 }
 
 /* Blog */
+main.blog {
+	text-align: justify;
+	text-justify: inter-word;
+}
 .image {
 	text-align: center;
+}
+div.image {
+	margin: 1em;
 }
 img.heading {
 	max-width: 100%;
