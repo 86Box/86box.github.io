@@ -77,10 +77,6 @@ div#socialnew {
 }
 
 /* Blog */
-main.blog { /* requires JS on IE6 */
-	text-align: justify;
-	text-justify: inter-word;
-}
 img.heading, img.image {
 	text-align: center;
 	max-width: 100%; /* N/A on IE6 */
