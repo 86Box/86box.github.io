@@ -12,7 +12,7 @@ Licensing
 Features
 --------
 * Easy to use interface
-* Cycle-accurate low level emulation of 8086-based processors up to the Pentium
+* Cycle-accurate low level emulation of 8086-based processors up to the Pentium II
 * Great range of customizability of emulated machines
 * Many available systems, such as the very first IBM PC 5150 from 1981, or the more obscure IBM PS/2 line of systems based on the Micro Channel Architecture
 * Lots of supported peripherals including video adapters, sound cards, network adapters, hard disk controllers, and SCSI adapters
@@ -21,7 +21,7 @@ Features
 
 <a name="downloads" />Downloads
 -------------------------------
-The latest stable version of 86Box is **v3.0**, which was released on December 1, 2021, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/tag/v3.0).
+The latest stable version of 86Box is **v3.1**, which was released on December 23, 2021, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/tag/v3.1).
 
 We also offer [nightly builds](https://github.com/86Box/86Box#automatic-builds), which are built from the latest source code, but may not be as stable and/or optimized as stable builds.
 
