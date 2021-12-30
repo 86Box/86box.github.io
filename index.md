@@ -31,7 +31,15 @@ System requirements and recommendations
 * Windows 7 Service Pack 1, Windows 8.1 or Windows 10
 * 4 GB of RAM
 
-It is also recommended to use the [86Box Manager](https://github.com/86Box/86BoxManager) by [daviunic](https://github.com/daviunic) (Overdoze) to manage emulated machines even though it is possible to use 86Box on its own with the `--vmpath`/`-P` command line option.
+Performance may vary depending on both host and guest configuration. Most emulation logic is executed in a single thread; therefore, systems with better IPC (instructions per clock) generally should be able to emulate higher clock speeds.
+
+It is also recommended to use a manager application with 86Box for easier handling of multiple virtual machines.
+* [WinBox for 86Box](https://github.com/laciba96/WinBox-for-86Box) by [Laci bá'](https://github.com/laciba96)
+  * The new manager with improved new user experience; installer, automatic updates of emulator files and more.
+* [86Box Manager](https://github.com/86Box/86BoxManager) by [daviunic](https://github.com/daviunic) (Overdoze)
+  * The traditional 86Box manager with a simple interface.
+
+It is also possible to use 86Box on its own with the `--vmpath`/`-P` command line option.
 
 Getting started
 ---------------
@@ -57,15 +65,15 @@ You can reach us on our IRC channel, Discord server or Twitter to discuss anythi
 
 </div>
 
-[Twitter: @86BoxEmulator](https://twitter.com/86BoxEmulator)*
+[Twitter: @86BoxEmulator](https://twitter.com/86BoxEmulator)
 
 YouTube
 -------
-Our [YouTube channel](https://youtube.com/channel/UChBnf0oliV7Holdk6ILze_w)* contains detailed, high-quality 86Box tutorials and videos about various related topics.
-###### The YouTube channel and Twitter account are managed by staff member DDX (@DDXofficial).
+Our [YouTube channel](https://youtube.com/c/86Box) contains detailed 86Box tutorials and videos about various related topics.
+###### The YouTube channel and Twitter account are managed by staff member [DDX](https://ddxofficial.com).
 
 Donations
 ---------
-We do not charge you for the emulator but donations are still welcome: [https://paypal.me/86Box](https://paypal.me/86Box).
+We do not charge you for the emulator but donations are still welcome: [https://paypal.me/86Box](https://paypal.me/86Box)
 
-You can also support the project on Patreon: [https://www.patreon.com/86box](https://www.patreon.com/86box).
+You can also support the project on Patreon: [https://www.patreon.com/86box](https://www.patreon.com/86box)
