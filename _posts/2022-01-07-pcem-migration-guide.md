@@ -32,7 +32,7 @@ PCem's emulation of some core system components, such as the Programmable Interv
 
 ## Bring your own manager
 
-PCem has a built-in manager, which allows you to keep and run multiple emulated machine configurations from one place. 86Box does not have such a manager, though one is planned for the future. For now, you can use our [**86Box Manager**](https://github.com/86Box/86BoxManager) application, which provides basic configuration management; or, even better, use the community-developed [**WinBox for 86Box**](https://github.com/laciba96/WinBox-for-86Box), which has an user-friendly interface resembling PC virtualizers, as well as presets, screenshot and printed document management, and other cool features.
+PCem has a built-in manager, which allows you to keep and run multiple emulated machine configurations from one place. 86Box does not have such a manager, though one is planned for the future. For now, you can use our [**86Box Manager**](https://github.com/86Box/86BoxManager) application, which provides basic configuration management; or, even better, use the community-developed [**WinBox for 86Box**](https://github.com/86Box/WinBox-for-86Box), which has an user-friendly interface resembling PC virtualizers, as well as presets, screenshot and printed document management, and other cool features.
 
 There is **no migration path** for configuration files, as the format is too different. You will have to reconfigure your emulated machine on 86Box, but that's a nice opportunity to double-check your configuration while also checking out our features. More on the differences between PCem and 86Box in the configuration department later.
 
