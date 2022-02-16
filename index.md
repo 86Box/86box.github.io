@@ -21,14 +21,15 @@ Features
 
 <a name="downloads" />Downloads
 -------------------------------
-The latest stable version of 86Box is **v3.1**, which was released on December 23, 2021, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/tag/v3.1).
+The latest stable version of 86Box is **v3.2**, which was released on February 16, 2022, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/tag/v3.2).
 
-We also offer [nightly builds](https://github.com/86Box/86Box#automatic-builds), which are built from the latest source code, but may not be as stable and/or optimized as stable builds.
+We also offer [nightly builds](https://ci.86box.net/job/86Box), which are built from the latest source code, but may not be as stable and/or optimized as stable builds.
 
 System requirements and recommendations
 ---------------------------------------
 * Intel Core 2 or AMD Athlon 64 processor
-* Windows 7 Service Pack 1, Windows 8.1 or Windows 10
+* Windows version: Windows 7 Service Pack 1, Windows 8.1 or Windows 10
+* Linux version: Ubuntu 16.04, Debian 9.0 or other distributions from 2016 onwards
 * 4 GB of RAM
 
 Performance may vary depending on both host and guest configuration. Most emulation logic is executed in a single thread; therefore, systems with better IPC (instructions per clock) generally should be able to emulate higher clock speeds.
@@ -36,6 +37,7 @@ Performance may vary depending on both host and guest configuration. Most emulat
 It is also recommended to use a manager application with 86Box for easier handling of multiple virtual machines.
 * [WinBox for 86Box](https://github.com/86Box/WinBox-for-86Box) by Laci bá'
   * The new manager with improved new user experience; installer, automatic updates of emulator files and more.
+  * While development is suspended and the repository is archived, the latest version is fully functional.
 * [86Box Manager](https://github.com/86Box/86BoxManager) by [daviunic](https://github.com/daviunic) (Overdoze)
   * The traditional 86Box manager with a simple interface.
 
@@ -43,7 +45,7 @@ It is also possible to use 86Box on its own with the `--vmpath`/`-P` command lin
 
 Getting started
 ---------------
-If you're a new user, click [here](https://86box.readthedocs.io/en/latest/) to see our documentation about the emulator's features and user interface.
+If you're a new user, click [here](https://86box.readthedocs.io/en/v3.2/) to see our documentation about the emulator's features and user interface.
 
 Help
 ----
