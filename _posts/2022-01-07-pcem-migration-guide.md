@@ -40,7 +40,7 @@ There is **no migration path** for configuration files, as the format is too dif
 
 ## <a name="machines" />Machine list
 
-86Box has most of the machines PCem emulates, though we have removed, renamed and/or recategorized some of them for various reasons. The table below (make sure to scroll down) provides a reference for **v3.1**.
+86Box has most of the machines PCem emulates, though we have removed, renamed and/or recategorized some of them for various reasons. The table below (make sure to scroll down) provides a reference for **v3.3**.
 
 <div class="scroll td2nowrap" markdown="block">
 
@@ -113,7 +113,7 @@ There is **no migration path** for configuration files, as the format is too dif
 | [386SX] Packard Bell Legend 300SX | - | Not implemented yet. |
 | [386SX] Samsung SPC-6033P | i386SX:<br />[SCAMP] Samsung SPC-6033P | |
 | [386DX] AMI 386DX clone | i386DX/i486:<br />[OPTi 495] DataExpert SX495 | 486 CPUs are also supported, like on the real motherboard. |
-| [386DX] Compaq Deskpro 386 | - | Undocumented chipset. We know it's the first 386 PC, but we want to do it right. |
+| [386DX] Compaq Deskpro 386 | i386DX:<br />[ISA] Compaq Deskpro 386 | |
 | [386DX] ECS 386/32 | i386DX:<br />[C&T 386] ECS 386/32 | |
 | [386DX] IBM PS/2 Model 70 (type 3) | i386DX: [MCA] IBM PS/2<br />model 70 (type 3) | |
 | [386DX] IBM PS/2 Model 80 | i386DX: [MCA] IBM PS/2<br />model 80 (type 2) | The Type 3 is also available. |
