@@ -1,6 +1,8 @@
 title: "86Box"
 description: "Emulator of x86-based machines"
 
+future: true
+
 github:
   is_project_page: true
   repository_name: 86Box
