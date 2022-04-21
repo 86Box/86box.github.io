@@ -17,7 +17,7 @@ Features
 
 <a name="downloads" />Downloads
 -------------------------------
-The latest stable version of 86Box is **v3.3**, which was released on March 18, 2022, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/tag/v3.3).
+The latest stable version of 86Box is **v3.4**, which was released on April 20, 2022, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/tag/v3.4).
 
 We also offer [nightly builds](https://ci.86box.net/job/86Box), which are built from the latest source code, but may not be as stable and/or optimized as stable builds.
 
@@ -26,7 +26,7 @@ Minimum system requirements and recommendations
 * Intel Core 2 or AMD Athlon 64 processor
 * Windows version: Windows 7 Service Pack 1, Windows 8.1 or Windows 10
 * Linux version: Ubuntu 16.04, Debian 9.0 or other distributions from 2016 onwards
-* macOS version (currently nightly builds only): macOS 10.13 High Sierra
+* macOS version: macOS High Sierra 10.13
 * 4 GB of RAM
 
 Performance may vary depending on both host and guest configuration. Most emulation logic is executed in a single thread; therefore, systems with better IPC (instructions per clock) generally should be able to emulate higher clock speeds.
