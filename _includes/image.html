@@ -1,6 +1,8 @@
 <figure class="image">
   <a href="{{ include.url }}"><img class="image" src="{{ include.thumbnail | default: include.url }}" /></a>
 {% if include.description %}
-  <figcaption><div class="imagecaption">{{ include.description }}</div></figcaption>
+  <figcaption><div class="imagecaption" markdown="block">
+  {{ include.description }}
+  </div></figcaption>
 {% endif %}
 </figure>

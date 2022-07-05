@@ -153,6 +153,12 @@ div#socialold {
 .image {
 	text-align: center;
 }
+div.image, figure.image {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0px;
+	margin-right: 0px;
+}
 img.heading {
 	max-width: 100%;
 	width: auto;
@@ -165,6 +171,9 @@ img.image {
 }
 div.imagecaption {
 	display: inline;
+}
+div.imagecaption > p {
+	margin: 0px;
 }
 hr {
 	border-color: #808080;
