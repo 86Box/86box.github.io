@@ -17,6 +17,9 @@ The debuggers we use and recommend are:
 
 <script>
 	window.onload = function() {
+		/* Show button. */
+		document.getElementById('debugagree').style.display = 'block';
+
 		/* Load job information from Jenkins. */
 		var script = document.createElement('script');
 		script.setAttribute('src', '//ci.86box.net/job/86Box/api/json?jsonp=populateLatestBuild&forceDebug=' + new Date().getTime());
@@ -92,7 +95,8 @@ The debuggers we use and recommend are:
 	}
 </script>
 
-<button id="debugagree" onclick="showDebug();">I agree, show me the debug binaries</button>
+<noscript><b>This page requires JavaScript to work.</b></noscript>
+<button id="debugagree" style="display: none;" onclick="showDebug();">I agree, show me the debug binaries</button>
 <form id="debugform" style="display: none;" action="#" onsubmit="submitDebug(); return false;">
 Build number: <input type="text" inputmode="numeric" pattern="#?\d*" id="buildnumber" size="4" required> <input type="submit" value="Get debug binaries">
 <div id="debugbins"></div>
