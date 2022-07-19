@@ -12,8 +12,4 @@ VirtualBox, Virtual PC and similar applications are _virtualizers_. They monitor
 
 On the other side, 86Box is an _low-level emulator_. It implements a whole system in software, which includes the CPU, chipset and additional cards, if any. Emulators interpret every single instruction running in the virtual machine, which allows them to run on incompatible CPU architectures. Furthermore, 86Box emulates peripherals that have actually existed, which makes it possible to use drivers that are already available. On the other side, these components haven't been designed to work in virtual environment, therefore it is not possible to offer advanced features such as mouse pointer integration or shared folders without custom drivers.
 
-> ### Why does 86Box not have a Linux version like PCem does?
-
-Even though 86Box is based on PCem, its development began before the cross-platform wxWidgets frontend was introduced to PCem. Even though we would love to provide a Linux version, we currently lack developers knowledgeable in Linux GUI apps development. See the [issue tracker](https://github.com/86Box/86Box/issues/136) for more details.
-
 [< Go back](index)
