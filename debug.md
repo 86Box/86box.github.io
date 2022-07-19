@@ -34,15 +34,23 @@ The debuggers we use and recommend are:
 		}
 	}
 
+	function scrollDebug() {
+		/* Scroll to build form. */
+		var debugform = document.getElementById('debugform');
+		if (debugform.scrollIntoView)
+			debugform.scrollIntoView();
+	}
 	function showDebug() {
 		/* Hide button and show form. */
 		document.getElementById('debugagree').style.display = 'none';
 		document.getElementById('debugform').style.display = 'block';
+		scrollDebug();
 	}
 	function submitDebug() {
 		/* Show loading message. */
 		var debugbins = document.getElementById('debugbins');
 		debugbins.innerHTML = '<br />Loading build information...';
+		scrollDebug();
 
 		/* Load build information from Jenkins. */
 		var script = document.createElement('script');
@@ -50,6 +58,7 @@ The debuggers we use and recommend are:
 		script.onerror = function() {
 			/* Show error message. */
 			debugbins.innerHTML = '<br />Could not load build information.';
+			scrollDebug();
 		};
 		document.head.appendChild(script);
 	}
@@ -92,6 +101,8 @@ The debuggers we use and recommend are:
 				}
 			}
 		}
+
+		scrollDebug();
 	}
 </script>
 
