@@ -66,7 +66,7 @@ The debuggers we use and recommend are:
 		var pathElements = {'': ul};
 		for (var artifactId in data['artifacts']) {
 			var artifact = data['artifacts'][artifactId];
-			if (artifact['fileName'].match(/-(Debug|Dev(ODR)?|Optimized)-/)) {
+			if (artifact['fileName'].match(/-(Debug|Optimized)-/)) {
 				var split = artifact['relativePath'].split('/');
 				for (var i = 0; i < split.length; i++) {
 					/* Skip paths that were already processed. */
