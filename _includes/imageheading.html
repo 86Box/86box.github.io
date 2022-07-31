@@ -1,4 +1,11 @@
 {{ include.separator | default: "<hr />" }}
 <figure class="image">
-  <img src="{{ include.url }}" alt="{{ include.heading }}" class="heading" />
+  <img src="{{ include.url }}" class="heading"
+{% if include.heading %}
+alt="{{ include.heading }}"
+{% endif %}
+{% if include.tooltip or include.heading %}
+title="{{ include.tooltip | default: include.heading }}"
+{% endif %}
+/>
 </figure>
