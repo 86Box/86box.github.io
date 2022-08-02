@@ -15,12 +15,6 @@ Features
 * MIDI output to Windows built-in MIDI support, FluidSynth, or emulated Roland synthesizers
 * Supports running MS-DOS, older Windows versions, OS/2, many Linux distributions, or vintage systems such as BeOS or NEXTSTEP, and applications for these systems
 
-<a name="downloads" />Downloads
--------------------------------
-The latest stable version of 86Box is **v3.6**, which was released on June 30, 2022, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/tag/v3.6).
-
-We also offer [nightly builds](https://ci.86box.net/job/86Box), which are built from the latest source code, but may not be as stable and/or optimized as stable builds.
-
 Minimum system requirements and recommendations
 -----------------------------------------------
 * Intel Core 2 or AMD Athlon 64 processor
