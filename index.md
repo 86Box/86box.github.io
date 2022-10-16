@@ -40,7 +40,7 @@ It is also recommended to use a manager application with 86Box for easier handli
 * [86Box Manager Lite](https://github.com/insanemal/86box_manager_py) by [Insanemal](https://github.com/insanemal)
 * [WinBox for 86Box](https://github.com/86Box/WinBox-for-86Box) by Laci bá' (Windows only)
 
-However, it is also possible to use 86Box on its own with the `--vmpath`/`-P` command line option.
+It is also possible to use 86Box on its own with the `--vmpath`/`-P` command line option.
 
 Getting started
 ---------------
