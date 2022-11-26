@@ -1,4 +1,4 @@
-{% if include.post.title == page.title %}<h1>{% else %}<h2><a href="{{ include.post.url }}">{% endif %}
+{% if include.post.title == page.title %}<h1 class="blogpost">{% else %}<h2 class="bloglist"><a href="{{ include.post.url }}">{% endif %}
 {{ include.post.title }}
 {% if include.post.title == page.title %}</h1><span>{% else %}</a></h2><small>{% endif %}
 {{ include.post.date | date: "%B %-d, %Y" }}

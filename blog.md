@@ -6,12 +6,12 @@ title: "Blog"
 # The 86Box Blog
 
 {% for post in site.posts %}
-<div>
+<div class="bloglist">
 	{% include postheader.html post=post %}
 	<p>{{ post.description }}</p>
+</div>
 {% if forloop.last %}
 {% else %}
-	<hr/>
+<hr/>
 {% endif %}
-</div>
 {% endfor %}

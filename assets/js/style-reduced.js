@@ -6,14 +6,14 @@ function getNaturalWidth(img) {
 	if (img.naturalWidth) {
 		return img.naturalWidth;
 	} else {
-		/* Cache images through src to avoid memory waste. */
-		var img2 = imgCache[img.src];
-		if (!img2) {
-			img2 = new Image();
-			img2.src = img.src;
-			imgCache[img.src] = img2;
+		/* Cache images by src to avoid wasting memory. */
+		var imgObj = imgCache[img.src];
+		if (!imgObj) {
+			imgObj = new Image();
+			imgObj.src = img.src;
+			imgCache[img.src] = imgObj;
 		}
-		return img2.width;
+		return imgObj.width;
 	}
 }
 
@@ -34,7 +34,8 @@ function fixPngs() {
 	/* Fix icon and logo. */
 	for (var i = 0; i < Math.min(2, document.images.length); i++) {
 		var img = document.images[i];
-		img.style.paddingRight = 0; /* padding counts as space for AlphaImageLoader so swap it for margin */
+		var oldpad = img.style.paddingRight; /* padding counts as space for AlphaImageLoader so swap it for margin */
+		img.style.paddingRight = 0;
 		var oldsrc = img.src;
 		var oldw = img.clientWidth;
 		var oldh = img.clientHeight;
@@ -42,7 +43,7 @@ function fixPngs() {
 		img.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + oldsrc + "', sizingMethod='scale')";
 		img.style.width = oldw + 'px';
 		img.style.height = oldh + 'px';
-		img.style.marginRight = '20pt';
+		img.style.marginRight = oldpad;
 	}
 }
 if (document.all && /MSIE (5\.5|6)/.test(navigator.userAgent))
