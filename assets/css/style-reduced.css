@@ -23,11 +23,11 @@ img {
 }
 img#icon, img#logo {
 	height: 70px;
-	margin-right: 18pt;
+	margin-right: 20pt;
 }
 a.navlink {
 	font-size: 15pt;
-	margin: 4pt;
+	margin: 6pt;
 }
 nav { /* requires JS on IE6 */
 	display: inline;

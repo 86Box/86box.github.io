@@ -39,7 +39,7 @@ body {
 body > header {
 	/* background-color: #8ca0ff; */
 	grid-area: head;
-	padding: 28pt 28pt;
+	padding: 30pt 30pt;
 }
 img#icon {
 	max-height: 75px;
@@ -52,10 +52,10 @@ body > nav {
 	align-items: center;
 	justify-content: right;
 	font-size: 15pt;
-	padding: 28pt 28pt;
+	padding: 30pt 30pt;
 }
 body > nav > a {
-	margin: 0 15pt;
+	margin: 0 20pt;
 }
 @media (max-width: 768px) {
 	body > header {
