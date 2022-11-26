@@ -194,7 +194,9 @@ p.blogspacer {
 	margin-bottom: 0.5em;
 }
 span.emoji {
-	font-family: Tweemoji Mozilla; /* work around Windows' lack of flags where supported (Firefox) */
+	font-family: Twemoji Mozilla,     /* try to work around Windows' lack of flags if any better emoji */
+				 EmojiOne,            /* fonts are installed and the browser supports them (not Chrome */
+				 Twitter Color Emoji; /* as of writing; Firefox provides and uses Twemoji Mozilla) */
 }
 div.scroll {
 	max-height: 500px;
