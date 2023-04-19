@@ -17,7 +17,7 @@ body {
 						 "about about about"
 						 "foot foot foot";
 	grid-template-rows: auto 1fr auto auto 70px;
-	animation: backgroundScroll 80s linear infinite;
+	/*animation: backgroundScroll 80s linear infinite;*/ /* fancy but lots of CPU usage! */
 }
 @media (max-width: 768px) {
 	body {
@@ -30,10 +30,10 @@ body {
 							 "foot foot foot";
 	}
 }
-@keyframes backgroundScroll {
+/*@keyframes backgroundScroll {
 	from {background-position: 0 0;}
 	to   {background-position: -1920px 0;}
-}
+}*/
 
 /* Page Layout */
 body > header {
