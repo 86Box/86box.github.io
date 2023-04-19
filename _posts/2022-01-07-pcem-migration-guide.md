@@ -26,7 +26,7 @@ PCem v15 introduced a rewritten dynamic recompiler, which was primarily aimed at
 
 PCem's emulation of some core system components, such as the Programmable Interval Timer (PIT), takes a few shortcuts to improve performance. These shortcuts are perfectly fine for games, which is what PCem targets; although, they have caused issues with the software preservation side of things, as we found out with **Microsoft Word 1.0**, the **MR BIOS** and other old pieces of software.
 
-<a name="cache" />In addition to taking fewer shortcuts, 86Box also tries to follow the specifications of these components, rather than implement the minimum viable feature set, which is - once again - good enough for games, but not good enough for some other applications. Generally speaking, the more accurate a component's emulation is made, the more host CPU horsepower it will require. There are certain limits to what's attainable to emulate (as an example, we don't do CPU caches, as that is too complex [even for other non-PC emulators](https://dolphin-emu.org/blog/2017/02/01/dolphin-progress-report-january-2017/#50-2204-hack-to-protect-lower-mem1-from-malicious-game-code-by-booto "Our issues involved cache test errors on some BIOSes"), but we try to follow what's possible.
+<a name="cache" />In addition to taking fewer shortcuts, 86Box also tries to follow the specifications of these components, rather than implement the minimum viable feature set, which is - once again - good enough for games, but not good enough for some other applications. Generally speaking, the more accurate a component's emulation is made, the more host CPU horsepower it will require. There are certain limits to what's attainable to emulate (as an example, we don't do CPU caches, as that is too complex [even for other non-PC emulators](https://dolphin-emu.org/blog/2017/02/01/dolphin-progress-report-january-2017/#50-2204-hack-to-protect-lower-mem1-from-malicious-game-code-by-booto "Our issues involved cache test errors on some BIOSes")\), but we try to follow what's possible.
 
 <hr />
 
@@ -40,7 +40,7 @@ There is **no migration path** for configuration files, as the format is too dif
 
 ## <a name="machines" />Machine list
 
-86Box has most of the machines PCem emulates, though we have removed, renamed and/or recategorized some of them for various reasons. The table below (make sure to scroll down) provides a reference for **v3.5**.
+86Box has most of the machines PCem emulates, though we have removed, renamed and/or recategorized some of them for various reasons. The table below (make sure to scroll down) provides a reference for **v3.11**.
 
 <div class="scroll td2nowrap" markdown="block">
 
