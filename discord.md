@@ -1,5 +1,5 @@
 ---
 layout: redirect
 title: 86Box Discord
-target: https://discord.gg/v5fCgFw
+target: https://discord.com/invite/v5fCgFw
 ---
