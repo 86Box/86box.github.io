@@ -1,0 +1,12 @@
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<meta http-equiv="refresh" content="0;URL={{ page.target }}" />
+		<script type="text/javascript">
+			location.href = '{{ page.target }}';
+		</script>
+	</head>
+	<body>
+		<h1><a href="{{ page.target }}">{{ page.title }}</a></h1>
+	</body>
+</html>
