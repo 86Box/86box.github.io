@@ -19,7 +19,7 @@ Features
 Downloads
 ---------
 
-The latest stable version of 86Box is **v3.11**, which was released on November 26, 2022, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/latest).
+The latest stable version of 86Box is **v4.0**, which was released on August 26, 2023, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/latest).
 
 We also offer [nightly builds](https://ci.86box.net/job/86Box), which are built from the latest source code, but may not be as stable and/or optimized as stable builds.
 

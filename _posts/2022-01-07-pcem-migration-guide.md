@@ -40,7 +40,7 @@ There is **no migration path** for configuration files, as the format is too dif
 
 ## <a name="machines" />Machine list
 
-86Box has most of the machines PCem emulates, though we have removed, renamed and/or recategorized some of them for various reasons. The table below (make sure to scroll down) provides a reference for **v3.11**.
+86Box has most of the machines PCem emulates, though we have removed, renamed and/or recategorized some of them for various reasons. The table below (make sure to scroll down) provides a reference for **v4.0**.
 
 <div class="scroll td2nowrap" markdown="block">
 
@@ -124,7 +124,7 @@ There is **no migration path** for configuration files, as the format is too dif
 | [486] Award SiS 496/497 | i486 (Socket 3):<br />[SiS 496] Rise Computer R418 | Not an exact match. The R418 is closest in chipset, BIOS and feature set. |
 | [486] Elonex PC-425X | - | BIOS is undumped, preventing us from implementing and validating this machine. |
 | [486] IBM PS/1 Model 2133 (EMEA 451) | - | Removed due to [cache abuse](#cache) by the BIOS diagnostics. |
-| [486] IBM PS/2 Model 70 (type 4) | - | Removed due to FPU abuse by the BIOS diagnostics. |
+| [486] IBM PS/2 Model 70 (type 4) | i486 (Socket 168 and 1):<br />[MCA] IBM PS/2 model 70 (type 4) | |
 | [486] Packard Bell PB410A | i486 (Socket 2):<br />[ACC 2168] Packard Bell PB410A | | 
 | [Socket 4] Intel Premiere/PCI | Socket 4:<br />[i430LX] Intel Premiere/PCI | |
 | [Socket 4] Packard Bell PB520R | Socket 4:<br />[i430LX] Packard Bell PB520R | |
@@ -183,7 +183,7 @@ The 86Box settings interface is designed to be easy to navigate, though you shou
 * The **Sound Blaster PCI 128** card is not listed, as it's an identical copy of the **Ensoniq AudioPCI (ES1371)**, so use that instead.
 * The **MIDI out device** option is sound card independent; it's located right below the sound card selection box. 86Box also supports MIDI input.
 * The **OPL emulator** option is not available. 86Box uses **NukedOPL** exclusively.
-* The **LPT device** option is in the **Ports (COM & LPT)** page, as 86Box supports more devices (such as printers) connected to up to 3 parallel ports.
+* The **LPT device** option is in the **Ports (COM & LPT)** page, as 86Box supports more devices (such as printers) connected to up to 4 parallel ports.
 
 ### Drives
 
