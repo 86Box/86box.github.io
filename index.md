@@ -37,8 +37,8 @@ Performance may vary depending on both host and guest configuration. Most emulat
 It is also recommended to use a manager application with 86Box for easier handling of multiple virtual machines.
 
 * [86Box Manager](https://github.com/86Box/86BoxManager) by [Overdoze](https://github.com/daviunic) (Windows only)
-* [86Box Manager Lite](https://github.com/insanemal/86box_manager_py) by [Insanemal](https://github.com/insanemal)
-* [WinBox for 86Box](https://github.com/86Box/WinBox-for-86Box) by Laci bá' (Windows only)
+* [MacBox](https://github.com/Moonif/MacBox) by [Silvermoon](https://github.com/Moonif) (macOS only)
+* [sl86](https://github.com/DDXofficial/sl86) by [DDX](https://github.com/DDXofficial) (command-line manager, Python 3.x required - Windows, macOS and Linux)
 
 It is also possible to use 86Box on its own with the `--vmpath`/`-P` command line option.
 
