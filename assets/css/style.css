@@ -109,6 +109,12 @@ body > footer > div > #reduced {
 	display: none;
 }
 @media (max-width: 768px) {
+	body > hero {
+		padding: 30px;
+	}
+	body > main {
+		padding: 30px;
+	}
 	body > footer {
 		padding: 50pt;
 		font-size: 20pt;
