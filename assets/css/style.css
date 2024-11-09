@@ -110,7 +110,7 @@ body > footer > div > #reduced {
 }
 @media (max-width: 768px) {
 	body > footer {
-		padding: 10pt;
+		padding: 50pt;
 		font-size: 20pt;
 	}
 }
