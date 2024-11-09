@@ -153,14 +153,12 @@ div#socialold {
 p, ul, ol {
 	margin: 0.65em 0;
 }
-.image {
-	text-align: center;
-}
-div.image, figure.image {
+div.image, figure {
 	margin-top: 1em;
 	margin-bottom: 1em;
 	margin-left: 0px;
 	margin-right: 0px;
+	text-align: center;
 }
 img.heading {
 	max-width: 100%;
@@ -172,10 +170,7 @@ img.image {
 	width: auto;
 	height: auto;
 }
-div.imagecaption {
-	display: inline;
-}
-div.imagecaption > p {
+.image-caption > p {
 	margin-top: 0.5em;
 	margin-bottom: 0px;
 }
@@ -237,14 +232,26 @@ code {
 	padding-left: 3pt;
 	padding-right: 3pt;
 }
+figure.youtube {
+
+}
+div.youtube {
+	position: relative;
+	overflow: hidden;
+	max-width: 640px;
+	margin: 0 auto;
+	aspect-ratio: 16/9;
+}
 iframe {
 	display: block;
 	border: none;
 }
 iframe.youtube {
-	text-align: center;
-	margin: auto;
-	width: 640px;
-	height: 360px;
-	padding-bottom: 8pt;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
 }

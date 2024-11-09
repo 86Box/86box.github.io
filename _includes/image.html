@@ -1,8 +1,24 @@
 <figure class="image">
-  <a href="{{ include.url }}"><img class="image" src="{{ include.thumbnail | default: include.url }}" /></a>
-{% if include.description %}
-  <figcaption><div class="imagecaption" markdown="block">
-  {{ include.description }}
-  </div></figcaption>
-{% endif %}
+{%- assign thumbnail = include.thumbnail | default: include.url -%}
+{%- assign alt = include.alt | default: include.description | normalize_whitespace -%}
+{%- if include.url -%}
+  <a href="{{ include.url }}"
+  {% if alt %}
+    title="{{ alt }}"
+  {% endif %}
+    >
+{%- endif -%}
+    <img class="image" src="{{ thumbnail }}"
+{%- if alt %}
+      alt="{{ alt }}"
+{%- endif -%}
+      />
+{%- if include.url -%}
+  </a>
+{%- endif -%}
+{%- if include.description -%}
+  <figcaption class="image-caption">
+    {{- include.description | markdownify -}}
+  </figcaption>
+{%- endif -%}
 </figure>

@@ -85,7 +85,7 @@ img.heading, img.image {
 	margin-top: 10pt;
 	margin-bottom: 5pt;
 }
-div.imagecaption {
+.image-caption {
 	text-align: center;
 	margin-bottom: 10pt;
 }

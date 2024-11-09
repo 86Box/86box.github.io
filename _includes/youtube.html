@@ -1,8 +1,10 @@
-<div class="image">
-  <iframe class="youtube" src="https://www.youtube-nocookie.com/embed/{{ include.video }}"><a href="https://www.youtube.com/watch?v={{ include.video }}">[Watch YouTube video]</a></iframe>
-{% if include.description %}
-  <div class="imagecaption" markdown="block">
-  {{ include.description }}
+<figure class="youtube">
+  <div class="youtube">
+    <iframe class="youtube" src="https://www.youtube-nocookie.com/embed/{{ include.video }}"><a href="https://www.youtube.com/watch?v={{ include.video }}">[Watch YouTube video]</a></iframe>
   </div>
-{% endif %}
-</div>
+{%- if include.description -%}
+  <figcaption class="image-caption">
+    {{- include.description | markdownify -}}
+  </figcaption>
+{%- endif -%}
+</figure>
