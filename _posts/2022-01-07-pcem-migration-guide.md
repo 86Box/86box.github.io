@@ -12,7 +12,7 @@ PCem users sometimes ask us about migrating their emulated setups to 86Box. Whil
 
 ---
 
-## <a name="performance" />Performance will be different
+## Performance will be different
 
 One aspect commonly used to compare PCem and 86Box is the emulation performance. There is indeed such a difference, but not everything is as black and white as it seems.
 
@@ -26,7 +26,8 @@ PCem v15 introduced a rewritten dynamic recompiler, which was primarily aimed at
 
 PCem's emulation of some core system components, such as the Programmable Interval Timer (PIT), takes a few shortcuts to improve performance. These shortcuts are perfectly fine for games, which is what PCem targets; although, they have caused issues with the software preservation side of things, as we found out with **Microsoft Word 1.0**, the **MR BIOS** and other old pieces of software.
 
-<a name="cache" />In addition to taking fewer shortcuts, 86Box also tries to follow the specifications of these components, rather than implement the minimum viable feature set, which is - once again - good enough for games, but not good enough for some other applications. Generally speaking, the more accurate a component's emulation is made, the more host CPU horsepower it will require. There are certain limits to what's attainable to emulate (as an example, we don't do CPU caches, as that is too complex [even for other non-PC emulators](https://dolphin-emu.org/blog/2017/02/01/dolphin-progress-report-january-2017/#50-2204-hack-to-protect-lower-mem1-from-malicious-game-code-by-booto "Our issues involved cache test errors on some BIOSes")\), but we try to follow what's possible.
+In addition to taking fewer shortcuts, 86Box also tries to follow the specifications of these components, rather than implement the minimum viable feature set, which is - once again - good enough for games, but not good enough for some other applications. Generally speaking, the more accurate a component's emulation is made, the more host CPU horsepower it will require. There are certain limits to what's attainable to emulate (as an example, we don't do CPU caches, as that is too complex [even for other non-PC emulators](https://dolphin-emu.org/blog/2017/02/01/dolphin-progress-report-january-2017/#50-2204-hack-to-protect-lower-mem1-from-malicious-game-code-by-booto "Our issues involved cache test errors on some BIOSes")\), but we try to follow what's possible.
+{: #cache}
 
 ---
 
@@ -38,7 +39,7 @@ There is **no migration path** for configuration files, as the format is too dif
 
 ---
 
-## <a name="machines" />Machine list
+## Machine list
 
 86Box has most of the machines PCem emulates, though we have removed, renamed and/or recategorized some of them for various reasons. The table below (make sure to scroll down) provides a reference for **v4.0**.
 
@@ -132,12 +133,12 @@ There is **no migration path** for configuration files, as the format is too dif
 | [Socket 5] Intel Advanced/ZP | Socket 5:<br />[i430FX] Intel Advanced/ZP | |
 | [Socket 5] Itautec Infoway Multimidia | - | OEM version of the Intel Advanced/ZP above, with an undumped BIOS. |
 | [Socket 5] Packard Bell PB570 | - | Inaccurate spec sheets (430NX vs. 430FX) being investigated as of writing. |
-| [Socket 7] ASUS P/I-P55TVP4 | Socket 7 (Dual Voltage):<br />[i430VX] ASUS P/I-P55TVP4 | See [PIIX southbridge mismatch](#piix). |
-| [Socket 7] ASUS P/I-P55T2P4 | Socket 7 (Dual Voltage):<br />[i430HX] ASUS P/I-P55T2P4 | See [PIIX southbridge mismatch](#piix). |
-| [Socket 7] Epox P55-VA | Socket 7 (Dual Voltage):<br />[i430VX] Epox P55-VA | See [PIIX southbridge mismatch](#piix). |
-| [Socket 7] Shuttle HOT-557 | Socket 7 (Dual Voltage):<br />[i430VX] Shuttle HOT-557 | See [PIIX southbridge mismatch](#piix). |
+| [Socket 7] ASUS P/I-P55TVP4 | Socket 7 (Dual Voltage):<br />[i430VX] ASUS P/I-P55TVP4 | See [PIIX southbridge mismatch](#piix-southbridge-mismatch). |
+| [Socket 7] ASUS P/I-P55T2P4 | Socket 7 (Dual Voltage):<br />[i430HX] ASUS P/I-P55T2P4 | See [PIIX southbridge mismatch](#piix-southbridge-mismatch). |
+| [Socket 7] Epox P55-VA | Socket 7 (Dual Voltage):<br />[i430VX] Epox P55-VA | See [PIIX southbridge mismatch](#piix-southbridge-mismatch). |
+| [Socket 7] Shuttle HOT-557 | Socket 7 (Dual Voltage):<br />[i430VX] Shuttle HOT-557 | See [PIIX southbridge mismatch](#piix-southbridge-mismatch). |
 | [Super 7] FIC VA-503+ | Super Socket 7:<br />[VIA MVP3] FIC VA-503+ | Not to be confused with the FIC VA-503**A**, which has a different southbridge. |
-| [Socket 8] Intel VS440FX | Socket 8:<br />[i440FX] Intel VS440FX | See [PIIX southbridge mismatch](#piix). |
+| [Socket 8] Intel VS440FX | Socket 8:<br />[i440FX] Intel VS440FX | See [PIIX southbridge mismatch](#piix-southbridge-mismatch). |
 | [Slot 1] Gigabyte GA-686BX | Slot 1:<br />[i440BX] Gigabyte GA-686BX | |
 
 </div>
@@ -153,7 +154,7 @@ While it's easier and recommended to just redo the CMOS settings from scratch, y
 3. Copy the `<configuration name>.<PCem machine name>.nvr` file from PCem's `nvr` folder to the 86Box machine's `nvr` folder, **using the same name** as the `.nvr` file created by 86Box.
 4. If the machine is equipped with Flash ROM, copy the `flash.bin` file from PCem's `roms` folder for the machine you're emulating to the 86Box machine's `nvr` folder, **using the same name** as the `.bin` file created by 86Box.
 
-### <a name="piix" />PIIX southbridge mismatch
+### PIIX southbridge mismatch
 
 PCem's implementation of the Intel 430HX, 430VX and 440FX chipsets uses the **PIIX** southbridge, while real motherboards and 86Box use the **PIIX3**. Some operating systems, such as Windows NT/2000/XP, will fail to boot after a PIIX to PIIX3 transition (and vice-versa) due to the IDE controller's new PCI ID.
 
@@ -167,7 +168,7 @@ The 86Box settings interface is designed to be easy to navigate, though you shou
 
 ### Machine
 
-* The machine list is split into **categories**, with the [tag] before a machine's name denoting its chipset instead of its category. The [table above](#machines) can help you locate PCem's machines on 86Box.
+* The machine list is split into **categories**, with the [tag] before a machine's name denoting its chipset instead of its category. The [table above](#machine-list) can help you locate PCem's machines on 86Box.
 * The CPU list is split into **families** instead of manufacturers.
 * Only CPUs that are **actually compatible** with the selected machine will be listed. There are some pitfalls, such as not all Super Socket 7 motherboards supporting the original Pentium without MMX.
 * Time synchronization has two options: **Local time** behaves like PCem and is ideal for running DOS and Windows, while **UTC time** is ideal for running Linux and other OSes which store time that way.
@@ -201,7 +202,7 @@ The 86Box settings interface is designed to be easy to navigate, though you shou
 
 ### Input
 
-* <a name="mousebtns" />86Box can emulate serial and PS/2 mice with **three buttons** or a **scroll wheel**. This functionality can be enabled through the **Configure** button next to the mouse selection box.
+* 86Box can emulate serial and PS/2 mice with **three buttons** or a **scroll wheel**. This functionality can be enabled through the **Configure** button next to the mouse selection box.
 * The **4-axis 4-button** joystick allows for a more modern control scheme (if supported by the emulated software), which takes advantage of all 4 axes and 4 buttons that the game port provides.
 
 ### Network
@@ -216,7 +217,7 @@ The 86Box user interface should look familiar to PCem users, with two main diffe
 
 {% include image.html url="/assets/images/pcem-migration/media.png" description="Media controls through the Media menu and status bar." %}
 
-Note that the key combination to release mouse capture on 86Box is **F8+F12**, as we've found PCem's Ctrl+End to conflict with some applications. You can also use the middle mouse button to release capture, unless a [three-button or wheel mouse](#mousebtns) is configured.
+Note that the key combination to release mouse capture on 86Box is **F8+F12**, as we've found PCem's Ctrl+End to conflict with some applications. You can also use the middle mouse button to release capture, unless a [three-button or wheel mouse](#input) is configured.
 
 ---
 
