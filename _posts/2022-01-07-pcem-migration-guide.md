@@ -10,7 +10,7 @@ image: "/assets/images/pcem-migration/hero.png"
 
 PCem users sometimes ask us about migrating their emulated setups to 86Box. While it is true that 86Box started out as a fork of PCem, we have since rewritten many components and made many additions, outgrowing our "fork" status. This post details all the differences between the two emulators that you have to keep in mind when migrating your setups to 86Box.
 
-<hr />
+---
 
 ## <a name="performance" />Performance will be different
 
@@ -28,7 +28,7 @@ PCem's emulation of some core system components, such as the Programmable Interv
 
 <a name="cache" />In addition to taking fewer shortcuts, 86Box also tries to follow the specifications of these components, rather than implement the minimum viable feature set, which is - once again - good enough for games, but not good enough for some other applications. Generally speaking, the more accurate a component's emulation is made, the more host CPU horsepower it will require. There are certain limits to what's attainable to emulate (as an example, we don't do CPU caches, as that is too complex [even for other non-PC emulators](https://dolphin-emu.org/blog/2017/02/01/dolphin-progress-report-january-2017/#50-2204-hack-to-protect-lower-mem1-from-malicious-game-code-by-booto "Our issues involved cache test errors on some BIOSes")\), but we try to follow what's possible.
 
-<hr />
+---
 
 ## Bring your own manager
 
@@ -36,7 +36,7 @@ PCem has a built-in manager, which allows you to keep and run multiple emulated 
 
 There is **no migration path** for configuration files, as the format is too different. You will have to reconfigure your emulated machine on 86Box, but that's a nice opportunity to double-check your configuration while also checking out our features. More on the differences between PCem and 86Box in the configuration department later.
 
-<hr />
+---
 
 ## <a name="machines" />Machine list
 
@@ -159,7 +159,7 @@ PCem's implementation of the Intel 430HX, 430VX and 440FX chipsets uses the **PI
 
 If you run into this issue, one option is to reinstall the operating system. Another option is to boot the operating system on PCem, uninstall the PIIX IDE driver (on Windows 2000/XP, use **Device Manager** to replace the 82371FB IDE controller driver with the Standard Dual Channel one), then switch to 86Box.
 
-<hr />
+---
 
 ## Settings differences
 
@@ -208,7 +208,7 @@ The 86Box settings interface is designed to be easy to navigate, though you shou
 
 * 86Box supports two networking modes: **PCap** allows for a bridged connection to a wired Ethernet adapter on the host through `pcap` libraries (such as [Npcap](https://nmap.org/npcap/) on Windows), while **SLiRP** behaves just like PCem's private network, with **port forwarding** available as an added advanced feature. See [our documentation](https://86box.readthedocs.io/en/v3.0/hardware/network.html) for more information.
 
-<hr />
+---
 
 ## User interface
 
@@ -218,7 +218,7 @@ The 86Box user interface should look familiar to PCem users, with two main diffe
 
 Note that the key combination to release mouse capture on 86Box is **F8+F12**, as we've found PCem's Ctrl+End to conflict with some applications. You can also use the middle mouse button to release capture, unless a [three-button or wheel mouse](#mousebtns) is configured.
 
-<hr />
+---
 
 ## Media
 
@@ -238,7 +238,7 @@ We recommend ripping your discs to `.cue` + `.bin` before using them in 86Box, a
 
 PCem's IBM cassette emulation uses the `.pzx` format, originally designed for ZX Spectrum tapes. 86Box supports the `.cas` format developed as part of [PCE/ibmpc](http://www.hampa.ch/pce/), as well as audio recordings in `.wav` or `.pcm` format. The `pzx2wav` tool in [PZX tools](http://zxds.raxoft.cz/pzx.html) can potentially convert `.pzx` tapes to `.wav` for 86Box, though we haven't tested that.
 
-<hr />
+---
 
 ## Conclusion
 
