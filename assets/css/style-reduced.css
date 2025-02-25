@@ -77,6 +77,15 @@ div#socialnew {
 }
 
 /* Blog */
+sup {
+	font-size: x-small;
+}
+sup > a.footnote {
+	margin-left: 1pt;
+}
+a.reversefootnote {
+	font-size: smaller;
+}
 img.heading, img.image {
 	text-align: center;
 	max-width: 100%; /* N/A on IE6 */

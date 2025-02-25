@@ -159,6 +159,19 @@ div#socialold {
 p, ul, ol {
 	margin: 0.65em 0;
 }
+sup {
+	font-size: x-small;
+}
+sup > a.footnote::before {
+	content: "[";
+	margin-left: 1pt;
+}
+sup > a.footnote::after {
+	content: "]";
+}
+a.reversefootnote {
+	font-size: smaller;
+}
 div.image, figure {
 	margin-top: 1em;
 	margin-bottom: 1em;
