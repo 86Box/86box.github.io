@@ -36,6 +36,7 @@ Performance may vary depending on both host and guest configuration. Most emulat
 
 It is also recommended to use a manager application with 86Box for easier handling of multiple virtual machines.
 
+* [Avalonia 86](https://github.com/notBald/Avalonia86) by [notBald](https://github.com/notBald) (Windows and Linux)
 * [86Box Manager](https://github.com/86Box/86BoxManager) by [Overdoze](https://github.com/daviunic) (Windows only)
 * [MacBox](https://github.com/Moonif/MacBox) by [Silvermoon](https://github.com/Moonif) (macOS only)
 * [sl86](https://github.com/DDXofficial/sl86) by [DDX](https://github.com/DDXofficial) (command-line manager, Python 3.x required - Windows, macOS and Linux)
