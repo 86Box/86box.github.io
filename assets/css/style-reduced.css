@@ -76,6 +76,20 @@ div#socialnew {
 	display: none;
 }
 
+/* Pages */
+div#bisectform, p#bisectbtns {
+	display: none;
+}
+.bisectgood {
+	background: #80ff80;
+}
+.bisectbad {
+	background: #ff8080;
+}
+span#bisecttry {
+	display: none;
+}
+
 /* Blog */
 sup {
 	font-size: x-small;

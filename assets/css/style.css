@@ -155,6 +155,29 @@ div#socialold {
 	display: none;
 }
 
+/* Pages */
+div#bisectform, p#bisectbtns {
+	display: none;
+}
+.bisectgood {
+	background: #80ff80;
+}
+.bisectbad {
+	background: #ff8080;
+}
+span#bisecttry {
+	display: none;
+}
+div#buildbins ul {
+	margin: 0;
+}
+div#buildbins li {
+	margin: 0.1em 0;
+}
+div#buildbins > p {
+	margin: 1em 0;
+}
+
 /* Blog */
 p, ul, ol {
 	margin: 0.65em 0;
