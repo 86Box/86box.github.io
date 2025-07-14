@@ -47,6 +47,7 @@ addEvent(window, 'load', function() {
 	/* Perform initial load. */
 	window.firstBuildLoad = true;
 	window.inBisectMode = false;
+	window.bisectFirstBuildNumber = 885;
 	window.bisectLatestBuildNumber = window.bisectMinBuildNumber = window.bisectMaxBuildNumber = window.bisectTargetBuildNumber = 0;
 	window.bisectSkipDirection = 1;
 	if (document.location.hash && document.location.hash.match) {
@@ -118,13 +119,10 @@ function submitBuild() {
 	script.setAttribute('src', '//ci.86box.net/job/86Box/' + (buildNumberVal || 'lastSuccessfulBuild') + '/api/json?jsonp=listBuild&noCache=' + new Date().getTime());
 	script.setAttribute('data-bnval', buildNumberVal);
 	addEvent(script, 'error', function() {
-		/* If in bisect mode, then just increment the build number, unless we're past the latest build. */
+		/* If in bisect mode, then just increment the build number, unless we're in an invalid build number. */
 		var scriptBuildNumberVal = parseInt(script.getAttribute('data-bnval') || buildNumberVal);
-		if (window.inBisectMode && scriptBuildNumberVal) {
-			if (scriptBuildNumberVal > window.bisectLatestBuildNumber)
-				return alert('Bisect process has gone past the latest build.');
+		if (window.inBisectMode && scriptBuildNumberVal && !(scriptBuildNumberVal < window.bisectFirstBuildNumber) && !(scriptBuildNumberVal > window.bisectLatestBuildNumber)) /* these weird comparisons also cover NaN */
 			return bisectNextBuild(scriptBuildNumberVal);
-		}
 
 		/* Show error message. */
 		buildBins.firstChild.innerHTML = 'Could not load build information.';
@@ -449,7 +447,7 @@ function updateBisect(btn) { /* delayed on keypress to let the input value updat
 	var goodBuildNumber = parseInt(document.getElementById('goodbuild').value);
 	var badBuildNumber = parseInt(document.getElementById('badbuild').value);
 	var tryMsg = document.getElementById('bisecttry');
-	if (!(goodBuildNumber >= 885) || !(badBuildNumber >= 885)) { /* these weird comparisons also cover NaN */
+	if (!(goodBuildNumber >= window.bisectFirstBuildNumber) || !(badBuildNumber >= window.bisectFirstBuildNumber)) { /* these weird comparisons also cover NaN */
 		tryMsg.style.display = 'none';
 		return;
 	}
