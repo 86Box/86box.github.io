@@ -21,7 +21,7 @@ Downloads
 
 The latest stable version of 86Box is **v4.2.1**, which was released on September 1, 2024, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/latest).
 
-We also offer [nightly builds](https://ci.86box.net/job/86Box), which are built from the latest source code, but may not be as stable and/or optimized as stable builds.
+We also offer [experimental builds](/builds), which are built from the latest source code, but may not be as stable and/or performant as release builds.
 
 Minimum system requirements and recommendations
 -----------------------------------------------
