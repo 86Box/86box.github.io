@@ -97,6 +97,12 @@ sup {
 sup > a.footnote {
 	margin-left: 1pt;
 }
+sup > a.footnote:before { /* different from modern syntax */
+	content: "[";
+}
+sup > a.footnote:after {
+	content: "]";
+}
 a.reversefootnote {
 	font-size: smaller;
 }
