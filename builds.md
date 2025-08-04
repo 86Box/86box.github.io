@@ -12,37 +12,6 @@ Most people should use the regular [**release builds**](https://github.com/86Box
 ---
 
 <script>
-/* Some polyfills because why not? */
-function addEvent(elem, evt, func) {
-	if (elem.addEventListener)
-		return elem.addEventListener(evt, func);
-	evt = 'on' + evt;
-	if (elem.attachEvent)
-		return elem.attachEvent(evt, func);
-	elem[evt] = func;
-}
-if (!Array.prototype.indexOf) {
-	Array.prototype.indexOf = function(elem, start) {
-		for (var i = start || 0; i < this.length; i++) {
-			if (this[i] == elem)
-				return i;
-		}
-		return -1;
-	}
-}
-if (!Array.prototype.push) {
-	Array.prototype.push = function(elem) {
-		this[this.length] = elem;
-	};
-}
-if (!Array.prototype.unshift) {
-	Array.prototype.unshift = function(elem) {
-		for (var i = this.length; i; i--)
-			this[i] = this[i - 1];
-		this[0] = elem;
-	}
-}
-
 addEvent(window, 'load', function() {
 	/* Perform initial load. */
 	window.firstBuildLoad = true;
