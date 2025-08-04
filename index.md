@@ -55,13 +55,13 @@ You can reach us on our IRC channel, Discord server or Twitter to discuss anythi
 
 <div id="socialnew" markdown="block">
 
-[![Visit our IRC channel](https://kiwiirc.com/buttons/irc.ringoflightning.net/86Box.png)](https://kiwiirc.com/client/irc.ringoflightning.net/?nick=website?#86Box)
+[![Visit our IRC channel](https://kiwiirc.com/buttons/irc.86box.net/86Box.png)](https://kiwiirc.com/client/irc.86box.net/?nick=website?#86Box)
 
 [![Visit our Discord server](https://discordapp.com/api/guilds/262614059009048590/embed.png)](https://discord.gg/v5fCgFw)
 
 </div><div id="socialold" markdown="block">
 
-[Visit our IRC channel](irc://irc.ringoflightning.net/#86Box) (requires an IRC client)
+Visit our IRC channel with an [installed IRC client](irc://irc.86box.net/#86Box) or the [CGI:IRC web client](http://irc.86box.net).
 
 </div>
 
