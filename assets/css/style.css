@@ -192,7 +192,7 @@ sup > a.footnote::before {
 sup > a.footnote::after {
 	content: "]";
 }
-li:target {
+li:target, sup:target {
 	background: #202040;
 }
 a.reversefootnote {

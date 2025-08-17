@@ -103,7 +103,7 @@ sup > a.footnote:before { /* different from modern syntax */
 sup > a.footnote:after {
 	content: "]";
 }
-li:target {
+li:target, sup:target {
 	background: #202040;
 }
 a.reversefootnote {
