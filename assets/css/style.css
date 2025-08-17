@@ -192,6 +192,9 @@ sup > a.footnote::before {
 sup > a.footnote::after {
 	content: "]";
 }
+li:target {
+	background: #402140;
+}
 a.reversefootnote {
 	font-size: smaller;
 }
