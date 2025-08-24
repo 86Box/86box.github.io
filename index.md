@@ -19,7 +19,7 @@ Features
 Downloads
 ---------
 
-The latest stable version of 86Box is **v4.2.1**, which was released on September 1, 2024, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/latest).
+The latest stable version of 86Box is **v5.0**, which was released on August 24, 2024, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/latest).
 
 We also offer [experimental builds](/builds), which are built from the latest source code, but may not be as stable and/or performant as release builds.
 
@@ -29,8 +29,8 @@ Minimum system requirements and recommendations
 * Intel Core 2 or AMD Athlon 64 processor or newer
 * At least 4 GB of RAM or higher
 * **Windows version:** Windows 7 Service Pack 1 or later
-* **Linux version:** Ubuntu 16.04, Debian 9.0 or other distributions from 2016 onwards
 * **macOS version:** macOS 10.13 High Sierra or newer
+* **Linux version:** Ubuntu 16.04, Debian 9.0 or other distributions from 2016 onwards
 
 Performance may vary depending on host and guest configuration. Most emulation logic is executed in a single thread. Therefore, systems with greater IPC (instructions per clock) capacity should be able to emulate higher clock speeds.
 
@@ -44,7 +44,7 @@ For easier handling of multiple virtual machines, we recommend using a manager a
 
 **NEW:** 86Box 5.0 introduces a new built-in virtual machine manager as a preview! Try it out by launching the 86Box executable directly with no command line arguments. We look forward to hearing your feedback!
 
-To use 86Box on its own, use the `--vmpath`/`-P` command line option. See the help (`-?` option) for more details.
+To use 86Box on its own, bypassing the manager, use the `-P`/`--vmpath` command line option. See the help (`-?` option) for more details.
 
 Getting started
 ---------------

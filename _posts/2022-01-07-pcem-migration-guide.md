@@ -35,7 +35,7 @@ In addition to taking fewer shortcuts, 86Box also tries to follow the specificat
 
 ## Bring your own manager
 
-PCem has a built-in manager, which allows you to keep and run multiple emulated machine configurations from one place. 86Box does not have such a manager, though one is planned for the future. For now, you can use our [**86Box Manager**](https://github.com/86Box/86BoxManager) or other manager applications developed by the community, which provide at least basic configuration management.
+PCem has a built-in manager, which allows you to keep and run multiple emulated machine configurations from one place. 86Box does not have such a manager, though one is planned for the future. For now, you can use [**Avalonia 86**](https://github.com/notBald/Avalonia86) or other manager applications developed by the community.
 
 There is **no migration path** for configuration files, as the format is too different. You will have to reconfigure your emulated machine on 86Box, but that's a nice opportunity to double-check your configuration while also checking out our features. More on the differences between PCem and 86Box in the configuration department later.
 
@@ -43,20 +43,20 @@ There is **no migration path** for configuration files, as the format is too dif
 
 ## Machine list
 
-86Box has most of the machines PCem emulates, though we have removed, renamed and/or recategorized some of them for various reasons. The table below (make sure to scroll down) provides a reference for **v4.2**.
+86Box has most of the machines PCem emulates, though we have removed, renamed and/or recategorized some of them for various reasons. The table below (make sure to scroll down) provides a reference for **v5.0**.
 
 <div class="scroll td2nowrap" markdown="block">
 
 | PCem name | 86Box category and name | Notes |
 |-----------|-------------------------|-------|
 | [8088] AMI XT clone | 8088:<br />[8088] AMI XT clone | |
-| [8088] Atari PC3 | - | Not implemented due to its undocumented Atari ST-based bus mouse. |
+| [8088] Atari PC3 | 8088:<br />[8088] Atari PC 3 | As with PCem, the Atari bus mouse and other on-board devices are not emulated. |
 | [8088] Compaq Portable Plus | 8088:<br />[8088] Compaq Portable | |
 | [8088] DTK XT clone | 8088:<br />[8088] DTK PIM-TB10-Z | |
 | [8088] Generic XT clone | 8088:<br />[8088] Generic XT clone | |
-| [8088] IBM PC | 8088:<br />[8088] IBM PC (1981/1982) | The 1981 and 1982 variants have [different BIOS versions and memory size limits](https://86box.readthedocs.io/en/v4.2/hardware/machinespecific.html#ibmpc). |
+| [8088] IBM PC | 8088:<br />[8088] IBM PC (1981/1982) | The 1981 and 1982 variants have [different BIOS versions and memory size limits](https://86box.readthedocs.io/en/v5.0/hardware/machinespecific.html#ibmpc). |
 | [8088] IBM PCjr | 8088:<br />[8088] IBM PCjr | |
-| [8088] IBM XT | 8088:<br />[8088] IBM XT (1982/1986) | The 1982 and 1986 variants have [different BIOS versions and memory size limits](https://86box.readthedocs.io/en/v4.2/hardware/machinespecific.html#ibmxt). |
+| [8088] IBM XT | 8088:<br />[8088] IBM XT (1982/1986) | The 1982 and 1986 variants have [different BIOS versions and memory size limits](https://86box.readthedocs.io/en/v5.0/hardware/machinespecific.html#ibmxt). |
 | [8088] Juko XT clone | 8088:<br />[8088] Juko ST | |
 | [8088] Leading Edge Model M | - | Not implemented yet. |
 | [8088] NCR PC4i | 8088:<br />[8088] NCR PC4i | 86Box emulates the NCR Graphics Adapter (NGA) that went with this machine. |
@@ -66,7 +66,7 @@ There is **no migration path** for configuration files, as the format is too dif
 | [8088] Tandy 1000 HX | 8088:<br />[8088] Tandy 1000 HX | |
 | [8088] Thomson TO16 PC | - | Not implemented yet. |
 | [8088] Toshiba T1000 | 8088:<br />[8088] Toshiba T1000 | |
-| [8088] VTech Laser Turbo XT | - | Not implemented yet due to an unknown jumper settings mechanism. |
+| [8088] VTech Laser Turbo XT | 8088:<br />[8088] VTech Laser Turbo XT | |
 | [8088] Xi8088 | 8088:<br />[8088] Xi8088 | |
 | [8088] Zenith Data SupersPort | 8088: [8088] Zenith Data<br />Systems SupersPort (Z-184) |
 | [8086] Amstrad PC1512 | 8086:<br />[8086] Amstrad PC1512 | |
@@ -79,14 +79,14 @@ There is **no migration path** for configuration files, as the format is too dif
 | [8086] Olivetti M24 | 8086:<br />[8086] Olivetti M21/24/24SP | |
 | [8086] Sinclair PC200 | 8086:<br />[8086] Amstrad PC20(0) | The Sinclair PC200 is a rebadged Amstrad PC20, keeping the same hardware. |
 | [8086] Tandy 1000 SL/2 | 8086:<br />[8086] Tandy 1000 SL/2 | |
-| [8088] Toshiba T1200 | 8086:<br />[8088] Toshiba T1200 | |
-| [8086] VTech Laser XT3 | - | Not implemented yet due to an unknown jumper settings mechanism. |
+| [8088] Toshiba T1200 | 8086:<br />[8086] Toshiba T1200 | |
+| [8086] VTech Laser XT3 | 8086:<br />[8086] VTech Laser XT3 | |
 | [286] AMI 286 clone | 80286:<br />[NEAT] DataExpert 286 | |
 | [286] Award 286 clone | 80286:<br />[SCAT] Hyundai Solomon 286KP | |
 | [286] Bull Micral 45 | - | Not implemented yet. |
 | [286] Commodore PC 30 III | 80286:<br />[ISA] Commodore PC 30 III | |
 | [286] Compaq Portable II | 80286:<br />[ISA] Compaq Portable II | |
-| [286] DELL System 200 | - | Not implemented yet. |
+| [286] DELL System 200 | 80286:<br />[C&T PC/AT] Dell System 200 | |
 | [286] Epson PC AX | - | Not implemented yet. |
 | [286] Epson PC AX2e | - | Not implemented yet. |
 | [286] Goldstar GDC-212M | 80286:<br />[SCAT] Goldstar GDC-212M | |
@@ -103,7 +103,7 @@ There is **no migration path** for configuration files, as the format is too dif
 | [286] Toshiba T3100e | 80286:<br />[ISA] Toshiba T3100e | |
 | [286] Trigem 286M | 80286:<br />[GC103] TriGem 286M | |
 | [286] Tulip AT Compact | - | Not implemented yet. |
-| [386SX] Acer 386SX25/N | - | BIOS is undumped, preventing us from implementing and validating this machine. |
+| [386SX] Acer 386SX25/N | i386SX:<br />[ALi M1409] Acer 100T | |
 | [386SX] AMA-932J | i386SX:<br />[HT18] AMA-932J | |
 | [386SX] AMI 386SX clone | - | Removed due to bugs and a lack of identification. |
 | [386SX] Amstrad MegaPC | i386SX:<br />[WD76C10] Amstrad MegaPC | As with PCem, the integrated Mega Drive is not emulated. |
@@ -113,9 +113,9 @@ There is **no migration path** for configuration files, as the format is too dif
 | [386SX] IBM PS/1 model 2121 | i386SX:<br />[ISA] IBM PS/1 model 2121 | |
 | [386SX] IBM PS/2 Model 55SX | i386SX:<br />[MCA] IBM PS/2 model 55SX | |
 | [386SX] KMX-C-02 | i386SX:<br />[SCAT] KMX-C-02 | |
-| [386SX] Packard Bell Legend 300SX | - | Not implemented yet. |
+| [386SX] Packard Bell Legend 300SX | i386SX:<br />[ACC 2036] Packard Bell Legend 300SX |  |
 | [386SX] Samsung SPC-6033P | i386SX:<br />[SCAMP] Samsung SPC-6033P | |
-| [386DX] AMI 386DX clone | i386DX/i486:<br />[OPTi 495] DataExpert SX495 | 486 CPUs are also supported, like on the real motherboard. |
+| [386DX] AMI 386DX clone | i386DX/i486:<br />[OPTi 495SX] DataExpert SX495 | 486 CPUs are also supported, like on the real motherboard. |
 | [386DX] Compaq Deskpro 386 | i386DX:<br />Not implemented yet. | |
 | [386DX] ECS 386/32 | i386DX:<br />[C&T 386] ECS 386/32 | |
 | [386DX] IBM PS/2 Model 70 (type 3) | i386DX: [MCA] IBM PS/2<br />model 70 (type 3) | |
@@ -195,8 +195,8 @@ The 86Box settings interface is designed to be easy to navigate, though you shou
   * CD-ROM drives in the **Floppy & CD-ROM drives** page;
   * Iomega Zip drives (86Box adds Zip 250 support) in the **Other removable devices** page;
   * 86Box adds magneto-optical drives also in the **Other removable devices** page.
-* IDE drives are represented by a channel:device index, instead of a drive index or location like "Primary Master". See [our documentation](https://86box.readthedocs.io/en/v4.2/settings/hdd.html#adding-a-new-disk) for more information.
-  * IDE channels 2 and 3 correspond to [tertiary and quaternary IDE controllers](https://86box.readthedocs.io/en/v4.2/hardware/ideterqua.html), which can be added through the **Storage controllers** page. PnP Sound Blaster cards also claim the quaternary channel for their integrated IDE.
+* IDE drives are represented by a channel:device index, instead of a drive index or location like "Primary Master". See [our documentation](https://86box.readthedocs.io/en/v5.0/settings/hdd.html#adding-a-new-disk) for more information.
+  * IDE channels 2 and 3 correspond to [tertiary and quaternary IDE controllers](https://86box.readthedocs.io/en/v5.0/hardware/ideterqua.html), which can be added through the **Storage controllers** page. PnP Sound Blaster cards also claim the quaternary channel for their integrated IDE.
 * 86Box supports using IDE and SCSI simultaneously. IDE is automatically enabled on machines with it, and up to 4 SCSI controllers can be installed through the **Storage controllers** page.
 * The **CD Model** and **CD Speed** options are configurable for each individual drive in the **Floppy & CD-ROM drives** page, as **Type** and **Speed** respectively.
 
@@ -207,7 +207,7 @@ The 86Box settings interface is designed to be easy to navigate, though you shou
 
 ### Network
 
-* 86Box supports three networking modes, detailed in [our documentation](https://86box.readthedocs.io/en/v4.2/hardware/network.html):
+* 86Box supports three networking modes, detailed in [our documentation](https://86box.readthedocs.io/en/v5.0/hardware/network.html):
   * **PCap** allows for a bridged connection to a wired Ethernet adapter on the host through `pcap` libraries (such as [Npcap](https://nmap.org/npcap/) on Windows).
   * **SLiRP** behaves just like PCem's private network, with **port forwarding** available as an added advanced feature.
   * **VDE** (not available on Windows) can create a virtual network connecting 86Box instances, other emulators and real network interfaces.
@@ -216,17 +216,17 @@ The 86Box settings interface is designed to be easy to navigate, though you shou
 
 ## User interface
 
-The 86Box user interface should look familiar to PCem users, with two main differences: the menu layout and the status bar. The [menu bar](https://86box.readthedocs.io/en/v4.2/usage/menubar.html) had some options moved to the **Settings** window, and media controls moved to the **Media menu**. The [status bar](https://86box.readthedocs.io/en/v4.2/usage/statusbar.html) contains activity indicators, with the same controls as the Media menu also being accessible by clicking the icons. While we don't have the **Machine** window, most of what it provides on PCem is accessible through the title bar, menu bar and status bar on 86Box.
+The 86Box user interface should look familiar to PCem users, with two main differences: the menu layout and the status bar. The [menu bar](https://86box.readthedocs.io/en/v5.0/usage/menubar.html) had some options moved to the **Settings** window, and media controls moved to the **Media menu**. The [status bar](https://86box.readthedocs.io/en/v5.0/usage/statusbar.html) contains activity indicators, with the same controls as the Media menu also being accessible by clicking the icons. While we don't have the **Machine** window, most of what it provides on PCem is accessible through the title bar, menu bar and status bar on 86Box.
 
 {% include image.html url="/assets/images/pcem-migration/media.png" description="Media controls through the Media menu and status bar." %}
 
-Note that the key combination to release mouse capture on 86Box is **F8+F12** on Windows hosts, as we've found PCem's Ctrl+End to conflict with some applications. You can also use the middle mouse button to release capture, unless a [three-button or wheel mouse](#input) is configured.
+As of 86Box v5.0, the key combination to release mouse capture is the same **Ctrl+End** as PCem on all host operating systems; previous 86Box versions used F8+F12 on Windows hosts. You can also use the middle mouse button to release capture (unless a [three-button or wheel mouse](#input) is configured) and even [customize the keyboard shortcuts](https://86box.readthedocs.io/en/v5.0/settings/input.html#key-bindings) for mouse release and several other emulator functions.
 
 ---
 
 ## Media
 
-86Box is quite a bit different in the media department as well. More disk image formats are supported, including our own [**86F**](https://86box.readthedocs.io/en/v4.2/dev/formats/86f.html) format for floppy bitstream images. Unlimited hard drives (the controllers are the limit) and up to 4 removable drives of **each type** (floppy, CD-ROM, Zip, MO) can be installed, with each removable drive getting its own entry on the **Media menu** and **status bar**.
+86Box is quite a bit different in the media department as well. More disk image formats are supported, including our own [**86F**](https://86box.readthedocs.io/en/v5.0/dev/formats/86f.html) format for floppy bitstream images. Unlimited hard drives (the controllers are the limit) and up to 4 removable drives of **each type** (floppy, CD-ROM, Zip, MO) can be installed, with each removable drive getting its own entry on the **Media menu** and **status bar**.
 
 ### Limited host CD-ROM passthrough
 
