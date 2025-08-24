@@ -20,7 +20,7 @@ One aspect commonly used to compare PCem and 86Box is the emulation performance.
 
 PCem v15 introduced a rewritten dynamic recompiler, which was primarily aimed at improving emulation performance in games; however, it also caused minor to severe performance regressions in other applications. One example of a regressed application is the (ironically related to a game) **MapEdit** level editor for Wolfenstein 3D, which we measured to lose as much as **85%** emulation speed with the new recompiler on a relatively sensible Pentium 75 setup.
 
-On **x86 host systems**, 86Box uses the **previous recompiler** from PCem versions before v15, with optimizations performed by us, as we have determined that the new one causes too many regressions to be adopted as a sensible default. There is a way for you to try out the new recompiler on 86Box, though: go to our [Jenkins](https://ci.86box.net/job/86Box/), find whatever build number you're using ([here's 6130](https://ci.86box.net/job/86Box/6130/artifact/), the release build for v4.2.1) and download the **New Recompiler (beta)** variant that's right for your host operating system.
+On **x86 host systems**, 86Box uses the **previous recompiler** from PCem versions before v15, with optimizations performed by us, as we have determined that the new one causes too many regressions to be adopted as a sensible default. There is a way for you to try out the new recompiler on 86Box, though: go to our [experimental builds page](/builds), find whatever build number you're using ([here's 7600](/builds#7600), the release build for v5.0) and download the **New Recompiler (beta)** variant that's right for your host operating system.
 
 On the other hand, **ARM host systems** always use the new recompiler, as the old one has not received an ARM version. It's worth noting both recompiler variants for macOS are **universal binaries**; the old recompiler one automatically switches over to the new recompiler when running on Apple Silicon.
 
@@ -28,14 +28,14 @@ On the other hand, **ARM host systems** always use the new recompiler, as the ol
 
 PCem's emulation of some core system components, such as the Programmable Interval Timer (PIT), takes a few shortcuts to improve performance. These shortcuts are perfectly fine for games, which is what PCem targets; although, they have caused issues with the software preservation side of things, as we found out with **Microsoft Word 1.0**, the **MR BIOS** and other old pieces of software.
 
-In addition to taking fewer shortcuts, 86Box also tries to follow the specifications of these components, rather than implement the minimum viable feature set, which is - once again - good enough for games, but not good enough for some other applications. Generally speaking, the more accurate a component's emulation is made, the more host CPU horsepower it will require. There are certain limits to what's attainable to emulate (as an example, we don't do CPU caches, as that is too complex [even for other non-PC emulators](https://dolphin-emu.org/blog/2017/02/01/dolphin-progress-report-january-2017/#50-2204-hack-to-protect-lower-mem1-from-malicious-game-code-by-booto "Our issues involved cache test errors on some BIOSes")\), but we try to follow what's possible.
+In addition to taking fewer shortcuts, 86Box also tries to follow the specifications of these components, rather than implement the minimum viable feature set, which is - once again - good enough for games, but not good enough for some other applications. Generally speaking, the more accurate a component's emulation is made, the more host CPU horsepower it will require. There are certain limits to what's attainable to emulate (as an example, we don't handle CPU cache, as that is too complex [even for other non-PC emulators](https://dolphin-emu.org/blog/2017/02/01/dolphin-progress-report-january-2017/#50-2204-hack-to-protect-lower-mem1-from-malicious-game-code-by-booto "Our issues involved BIOS cache test errors on some machines")\), but we try to follow what's possible.
 {: #cache}
 
 ---
 
-## Bring your own manager
+## Machine manager
 
-PCem has a built-in manager, which allows you to keep and run multiple emulated machine configurations from one place. 86Box does not have such a manager, though one is planned for the future. For now, you can use [**Avalonia 86**](https://github.com/notBald/Avalonia86) or other manager applications developed by the community.
+After years of requests, 86Box v5.0 finally brings a preview for a built-in manager, which allows you to keep and run multiple emulated machine configurations from one place. As with PCem, open 86Box directly to start the manager. You can also use [**Avalonia 86**](https://github.com/notBald/Avalonia86) or other manager applications developed by the community.
 
 There is **no migration path** for configuration files, as the format is too different. You will have to reconfigure your emulated machine on 86Box, but that's a nice opportunity to double-check your configuration while also checking out our features. More on the differences between PCem and 86Box in the configuration department later.
 
@@ -73,7 +73,7 @@ There is **no migration path** for configuration files, as the format is too dif
 | [8086] Amstrad PC1640 | 8086:<br />[8086] Amstrad PC1640 | |
 | [8086] Amstrad PC2086 | 8086:<br />[8086] Amstrad PC2086 | |
 | [8086] Amstrad PC3086 | 8086:<br />[8086] Amstrad PC3086 | |
-| [8086] Amstrad PC5086 | - | Not implemented yet. |
+| [8086] Amstrad PC5086 | 8086:<br />[8086] Amstrad PC5086 | |
 | [8086] Amstrad PPC512/640 | 8086:<br />[8086] Amstrad PPC512/640 | |
 | [8086] Compaq Deskpro | 8086:<br />[8086] Compaq Deskpro | |
 | [8086] Olivetti M24 | 8086:<br />[8086] Olivetti M21/24/24SP | |
@@ -102,7 +102,7 @@ There is **no migration path** for configuration files, as the format is too dif
 | [286] Samsung SPC-4620P | 80286:<br />[SCAT] Samsung SPC-4620P | |
 | [286] Toshiba T3100e | 80286:<br />[ISA] Toshiba T3100e | |
 | [286] Trigem 286M | 80286:<br />[GC103] TriGem 286M | |
-| [286] Tulip AT Compact | - | Not implemented yet. |
+| [286] Tulip AT Compact | 80286:<br />[C&T PC/AT] Tulip AT Compact | |
 | [386SX] Acer 386SX25/N | i386SX:<br />[ALi M1409] Acer 100T | |
 | [386SX] AMA-932J | i386SX:<br />[HT18] AMA-932J | |
 | [386SX] AMI 386SX clone | - | Removed due to bugs and a lack of identification. |
@@ -116,11 +116,11 @@ There is **no migration path** for configuration files, as the format is too dif
 | [386SX] Packard Bell Legend 300SX | i386SX:<br />[ACC 2036] Packard Bell Legend 300SX |  |
 | [386SX] Samsung SPC-6033P | i386SX:<br />[SCAMP] Samsung SPC-6033P | |
 | [386DX] AMI 386DX clone | i386DX/i486:<br />[OPTi 495SX] DataExpert SX495 | 486 CPUs are also supported, like on the real motherboard. |
-| [386DX] Compaq Deskpro 386 | i386DX:<br />Not implemented yet. | |
+| [386DX] Compaq Deskpro 386 | i386DX:<br />[ISA] Compaq Deskpro 386 | |
 | [386DX] ECS 386/32 | i386DX:<br />[C&T 386] ECS 386/32 | |
 | [386DX] IBM PS/2 Model 70 (type 3) | i386DX: [MCA] IBM PS/2<br />model 70 (type 3) | |
 | [386DX] IBM PS/2 Model 80 | i386DX: [MCA] IBM PS/2<br />model 80 (type 2) | The Type 3 is also available. |
-| [386DX] MR 386DX clone | i386DX/i486: [OPTi 495]<br />DataExpert SX495 (MR BIOS) | 486 CPUs are also supported, like on the real motherboard. |
+| [386DX] MR 386DX clone | i386DX/i486: [OPTi 495SX]<br />DataExpert SX495 (MR BIOS) | 486 CPUs are also supported, like on the real motherboard. |
 | [386DX] Samsung SPC-6000A | i386DX:<br />[C&T 386] Samsung SPC-6000A | |
 | [486] AMI 486 clone | i486 (Socket 168 and 1):<br />[ALi M1429] Olystar LIL1429 | |
 | [486] AMI WinBIOS 486 | i486 (Socket 2):<br />[ALi M1429G] Kaimei SA-486 | |
@@ -134,12 +134,12 @@ There is **no migration path** for configuration files, as the format is too dif
 | [Socket 5] Intel Advanced/EV | Socket 7 (Single Voltage):<br />[i430FX] Intel Advanced/EV | |
 | [Socket 5] Intel Advanced/ZP | Socket 5:<br />[i430FX] Intel Advanced/ZP | |
 | [Socket 5] Itautec Infoway Multimidia | - | OEM version of the Intel Advanced/ZP above, with an undumped BIOS. |
-| [Socket 5] Packard Bell PB570 | - | Inaccurate spec sheets (430NX vs. 430FX) being investigated as of writing. |
+| [Socket 5] Packard Bell PB570 | - | Inaccurate spec sheets being investigated as of writing. |
 | [Socket 7] ASUS P/I-P55TVP4 | Socket 7 (Dual Voltage):<br />[i430VX] ASUS P/I-P55TVP4 | See [PIIX southbridge mismatch](#piix-southbridge-mismatch). |
 | [Socket 7] ASUS P/I-P55T2P4 | Socket 7 (Dual Voltage):<br />[i430HX] ASUS P/I-P55T2P4 | See [PIIX southbridge mismatch](#piix-southbridge-mismatch). |
 | [Socket 7] Epox P55-VA | Socket 7 (Dual Voltage):<br />[i430VX] Epox P55-VA | See [PIIX southbridge mismatch](#piix-southbridge-mismatch). |
 | [Socket 7] Shuttle HOT-557 | Socket 7 (Dual Voltage):<br />[i430VX] Shuttle HOT-557 | See [PIIX southbridge mismatch](#piix-southbridge-mismatch). |
-| [Super 7] FIC VA-503+ | Super Socket 7:<br />[VIA MVP3] FIC VA-503+ | Not to be confused with the FIC VA-503**A**, which has a different southbridge. |
+| [Super 7] FIC VA-503+ | Super Socket 7:<br />[VIA MVP3] FIC VA-503+ | Not to be confused with the FIC VA-503**A**, which is a very different board. |
 | [Socket 8] Intel VS440FX | Socket 8:<br />[i440FX] Intel VS440FX | See [PIIX southbridge mismatch](#piix-southbridge-mismatch). |
 | [Slot 1] Gigabyte GA-686BX | Slot 1:<br />[i440BX] Gigabyte GA-686BX | |
 
@@ -182,8 +182,8 @@ The 86Box settings interface is designed to be easy to navigate, though you shou
 
 ### Sound
 
-* There are regular and PnP variants of the **Sound Blaster 16** and **AWE32** cards. You should stick to the regular variants with manual settings, unless you feel like messing with ISA Plug and ~~Pray~~ Play.
-* The **MIDI out device** option is sound card independent; it's located right below the sound card selection box. 86Box also supports MIDI input.
+* There are regular and PnP variants of the **Sound Blaster 16** and **AWE32** cards. When migrating an existing machine, sticking to the regular variants with manual settings is recommended.
+* The **MIDI out device** option is sound card independent; it's located right below the sound card selection boxes. 86Box also supports MIDI input.
 * The **OPL emulator** option is named **FM synth driver**, with a selection of NukedOPL for accuracy or YMFM for performance.
 * The **LPT device** option is in the **Ports (COM & LPT)** page, as 86Box supports more devices (such as printers) connected to up to 4 parallel ports.
 
@@ -193,17 +193,17 @@ The 86Box settings interface is designed to be easy to navigate, though you shou
   * Floppy drives in the **Floppy & CD-ROM drives** page;
   * Hard drives in the **Hard disks** page;
   * CD-ROM drives in the **Floppy & CD-ROM drives** page;
-  * Iomega Zip drives (86Box adds Zip 250 support) in the **Other removable devices** page;
+  * Iomega Zip drives (86Box adds Zip 250 support) as removable disks in the **Other removable devices** page;
   * 86Box adds magneto-optical drives also in the **Other removable devices** page.
 * IDE drives are represented by a channel:device index, instead of a drive index or location like "Primary Master". See [our documentation](https://86box.readthedocs.io/en/v5.0/settings/hdd.html#adding-a-new-disk) for more information.
-  * IDE channels 2 and 3 correspond to [tertiary and quaternary IDE controllers](https://86box.readthedocs.io/en/v5.0/hardware/ideterqua.html), which can be added through the **Storage controllers** page. PnP Sound Blaster cards also claim the quaternary channel for their integrated IDE.
+  * IDE channels 2 and 3 correspond to [tertiary and quaternary IDE controllers](https://86box.readthedocs.io/en/v5.0/hardware/ideterqua.html), which can be added through the **Storage controllers** page. PnP Sound Blaster cards with IDE capability also claim the quaternary channel.
 * 86Box supports using IDE and SCSI simultaneously. IDE is automatically enabled on machines with it, and up to 4 SCSI controllers can be installed through the **Storage controllers** page.
 * The **CD Model** and **CD Speed** options are configurable for each individual drive in the **Floppy & CD-ROM drives** page, as **Type** and **Speed** respectively.
 
 ### Input
 
 * 86Box can emulate serial and PS/2 mice with **three buttons** or a **scroll wheel**. This functionality can be enabled through the **Configure** button next to the mouse selection box.
-* The **4-axis 4-button** joystick allows for a more modern control scheme (if supported by the emulated software), which takes advantage of all 4 axes and 4 buttons that the game port provides.
+* The **4-axis 4-button** joystick allows for a more modern control scheme (if supported by the emulated software), which takes advantage of all 4 axes and 4 buttons that the game port provides. More joystick models are also available.
 
 ### Network
 
@@ -216,7 +216,7 @@ The 86Box settings interface is designed to be easy to navigate, though you shou
 
 ## User interface
 
-The 86Box user interface should look familiar to PCem users, with two main differences: the menu layout and the status bar. The [menu bar](https://86box.readthedocs.io/en/v5.0/usage/menubar.html) had some options moved to the **Settings** window, and media controls moved to the **Media menu**. The [status bar](https://86box.readthedocs.io/en/v5.0/usage/statusbar.html) contains activity indicators, with the same controls as the Media menu also being accessible by clicking the icons. While we don't have the **Machine** window, most of what it provides on PCem is accessible through the title bar, menu bar and status bar on 86Box.
+The 86Box user interface has a lot more going on. The [menu bar](https://86box.readthedocs.io/en/v5.0/usage/menubar.html) contains some options, while others are in the **Settings** window, and media controls are found in the **Media menu**. The [toolbar](https://86box.readthedocs.io/en/v5.0/usage/toolbar.html) contains shortcuts for common actions and the emulation speed indicator. The [status bar](https://86box.readthedocs.io/en/v5.0/usage/statusbar.html) contains indicators for activity, keyboard lock lights and display refresh rate, with the same controls as the Media menu also being accessible by clicking the media icons. While we don't have the **Machine** window, a lot of what it provides is accessible through other means on 86Box.
 
 {% include image.html url="/assets/images/pcem-migration/media.png" description="Media controls through the Media menu and status bar." %}
 
@@ -226,17 +226,17 @@ As of 86Box v5.0, the key combination to release mouse capture is the same **Ctr
 
 ## Media
 
-86Box is quite a bit different in the media department as well. More disk image formats are supported, including our own [**86F**](https://86box.readthedocs.io/en/v5.0/dev/formats/86f.html) format for floppy bitstream images. Unlimited hard drives (the controllers are the limit) and up to 4 removable drives of **each type** (floppy, CD-ROM, Zip, MO) can be installed, with each removable drive getting its own entry on the **Media menu** and **status bar**.
+86Box is quite a bit different in the media department as well. More disk image formats are supported, including our own [**86F**](https://86box.readthedocs.io/en/v5.0/dev/formats/86f.html) format for floppy bitstream images. Unlimited hard drives (the controllers are the limit) and up to 4 removable drives of **each type** (floppy, CD-ROM, removable disk, MO) can be installed, with each removable drive getting its own entry on the **Media menu** and **status bar**.
 
 ### Limited host CD-ROM passthrough
 
 86Box currently supports the use of a host CD-ROM drive on **Windows hosts only**, with more platforms coming soon.
 
-For other platforms, we recommend ripping your discs to `.cue` + `.bin`, as that format preserves the sector mode, audio tracks and other information that `.iso` doesn't. 86Box also supports `.cue` images with audio tracks in `.wav`, `.mp3` and other encapsulated or compressed formats.
+For other platforms, we recommend ripping your discs to `.cue` + `.bin` or **unencrypted** `.mds` + `.mdf`, as those formats preserve the sector mode, audio tracks and other information that `.iso` doesn't. 86Box also supports `.cue` images with audio tracks in `.wav`, `.mp3` and other encapsulated or compressed formats.
 
-### Zip 250 and MO
+### Removable disks and MO
 
-86Box supports **Iomega Zip 250** disks, which require Zip 250 support to be enabled at a drive level in the **Other removable devices** settings page. **Magneto-optical** (MO) is also supported, as another removable medium which provides more storage than Zip disks: up to 1.3 GB per cartridge.
+On top of the Iomega Zip 100, 86Box supports **Zip 250** and **generic removable disks**, which can be set as removable disk drive models in the **Other removable devices** settings page. **Magneto-optical** (MO) is also supported, as another removable medium which provides more storage than Zip disks: up to 1.3 GB per cartridge.
 
 ### Cassette formats
 
