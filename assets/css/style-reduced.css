@@ -21,17 +21,15 @@ header { /* N/A on IE6 */
 img {
 	border: none;
 }
-img#icon, img#logo {
-	height: 70px;
-	margin-right: 20pt;
+img#logo {
+	margin-right: 15pt;
 }
 a.navlink {
 	font-size: 15pt;
-	margin: 6pt;
+	margin: 0 6pt;
 }
 nav { /* requires JS on IE6 */
 	display: inline;
-	height: 70px;
 	vertical-align: middle;
 }
 hero, main { /* requires JS on IE6 */
