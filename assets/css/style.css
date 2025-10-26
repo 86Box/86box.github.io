@@ -102,6 +102,9 @@ body > footer {
 	color: #8c9dbb;
 	font-size: 0.9em;
 }
+body > footer > div {
+	margin: 0.9em;
+}
 body > footer > div > #reduced {
 	display: none;
 }
@@ -296,6 +299,9 @@ pre.highlight {
 }
 pre.highlight > code {
 	padding: 0;
+}
+pre.highlight, code {
+	font-family: inherit;
 }
 div.youtube {
 	position: relative;
