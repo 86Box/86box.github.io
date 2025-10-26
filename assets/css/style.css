@@ -41,10 +41,6 @@ body > header {
 	grid-area: head;
 	padding: 30pt 30pt;
 }
-img#icon {
-	max-height: 75px;
-	padding-right: 20pt;
-}
 body > nav {
 	/* background-color: #ffa08c; */
 	grid-area: nav;
