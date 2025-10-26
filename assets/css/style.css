@@ -10,23 +10,23 @@ body {
 	background-repeat: repeat-x;
 	margin: 0 auto;
 	max-width: 67rem;
+	font-size: 16px;
 	display: grid;
 	grid-template-areas: "head head nav"
 						 "hero hero hero"
 						 "main main main"
-						 "about about about"
 						 "foot foot foot";
-	grid-template-rows: auto 1fr auto auto 70px;
+	grid-template-rows: auto 1fr auto 70px;
 	/*animation: backgroundScroll 80s linear infinite;*/ /* fancy but lots of CPU usage! */
 }
 @media (max-width: 768px) {
 	body {
-		grid-template-rows: auto auto 1fr auto auto 70px;
+		font-size: 14px;
+		grid-template-rows: auto auto 1fr auto 70px;
 		grid-template-areas: "head head head"
 							 "nav nav nav"
 							 "hero hero hero"
 							 "main main main"
-							 "about about about"
 							 "foot foot foot";
 	}
 }
@@ -39,7 +39,9 @@ body {
 body > header {
 	/* background-color: #8ca0ff; */
 	grid-area: head;
-	padding: 30pt 30pt;
+	padding: 40px;
+	display: flex;
+	align-items: center;
 }
 body > nav {
 	/* background-color: #ffa08c; */
@@ -47,24 +49,30 @@ body > nav {
 	display: flex;
 	align-items: center;
 	justify-content: right;
-	font-size: 15pt;
-	padding: 30pt 30pt;
-}
-body > nav > a {
-	margin: 0 20pt;
+	column-gap: 50px;
+	font-size: 20px;
+	padding: 40px;
 }
 @media (max-width: 768px) {
 	body > header {
+		max-width: 100%;
+		padding: 15px 0px 15px;
+		justify-content: center;
+	}
+	body > header > a {
 		text-align: center;
 	}
-	body > header > img {
-		max-width: 100%;
-		width: auto;
-		height: auto;
+	body > header > a > img {
+		max-width: 80%;
 	}
 	body > nav {
+		max-width: 100%;
 		justify-content: center;
-		font-size: 25pt;
+		column-gap: 25px;
+		padding: 0 15px 15px;
+	}
+	body > nav > a {
+		font-size: min(20px, 4.5vw);
 	}
 }
 
@@ -72,24 +80,16 @@ body > hero {
 	grid-area: hero;
 	display: grid;
 	align-items: center;
-	column-gap: 40pt;
-	padding: 40px;
+	column-gap: 50px;
+	padding: 0 40px 40px;
 }
 
 body > main {
 	grid-area: main;
 	display: grid;
 	align-items: center;
-	column-gap: 40pt;
-	padding: 40px;
-}
-body > #about {
-	background-color: #0e305a;
-	grid-area: about;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	line-height: 18pt;
+	column-gap: 50px;
+	padding: 0 40px 40px;
 }
 
 body > footer {
@@ -98,8 +98,9 @@ body > footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	color: #8c9dbb;
-	font-size: 11pt;
+	font-size: 0.9em;
 }
 body > footer > div > #reduced {
 	display: none;
@@ -109,11 +110,8 @@ body > footer > div > #reduced {
 		padding: 30px;
 	}
 	body > main {
-		padding: 30px;
-	}
-	body > footer {
-		padding: 50pt;
-		font-size: 20pt;
+		padding: 0 15px 15px;
+		max-width: 100%;
 	}
 }
 
@@ -178,12 +176,23 @@ div#buildbins > p {
 p, ul, ol {
 	margin: 0.65em 0;
 }
+li > ul, li > ol {
+	margin-top: 0.325em;
+}
+@media (max-width: 768px) {
+	ul {
+		padding-left: 1em;
+	}
+	ol {
+		padding-left: 2em;
+	}
+}
 sup {
 	font-size: x-small;
 }
 sup > a.footnote::before {
 	content: "[";
-	margin-left: 1pt;
+	margin-left: 1.5px;
 }
 sup > a.footnote::after {
 	content: "]";
@@ -219,6 +228,11 @@ hr {
 	border-color: #808080;
 	width: 100%;
 }
+@media (max-width: 768px) {
+	h1 {
+		font-size: 1.83em;
+	}
+}
 h1.blogpost, h2, h3 {
 	margin-bottom: 0.5em;
 }
@@ -235,15 +249,10 @@ span.emoji {
 				 Twitter Color Emoji; /* as of writing; Firefox provides and uses Twemoji Mozilla) */
 }
 div.scroll {
-	max-height: 500px;
+	max-height: min(500px, 67vh);
 	padding-right: 1px; /* make border less ugly on Chrome on Windows */
+	overflow-x: auto;
 	overflow-y: scroll;
-}
-@media (max-width: 768px) {
-	div.scroll {
-		max-width: 100vh-60pt;
-		overflow-x: scroll;
-	}
 }
 table {
 	border: 1px solid #808080;
@@ -266,12 +275,27 @@ div.scroll > table > thead > tr > th {
 div.td2nowrap > table > tbody > tr > td:nth-child(2) {
 	white-space: nowrap;
 }
-code {
-	font-size: 11pt;
+code, div.highlight {
+	font-size: 0.95em;
 	background: #404040;
-	border-radius: 3pt;
-	padding-left: 3pt;
-	padding-right: 3pt;
+}
+code {
+	border-radius: 4px;
+	padding: 0 4px;
+}
+div:has(div.highlight) {
+	overflow-x: hidden;
+}
+div.highlight {
+	overflow-x: auto;
+	border-radius: 8px;
+}
+pre.highlight {
+	margin: 0;
+	padding: 6px 8px;
+}
+pre.highlight > code {
+	padding: 0;
 }
 div.youtube {
 	position: relative;
