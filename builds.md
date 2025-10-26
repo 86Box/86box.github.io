@@ -352,11 +352,9 @@ function listBuild(data) {
 			break;
 	}
 	var ts = new Date(data['timestamp']);
-	var started;
+	var started = ts.toString();
 	if (ts.toDateString && ts.toTimeString)
 		started = ts.toDateString() + ' ' + ts.toTimeString().replace(/ \([^\)]+\)/g, '');
-	else
-		started = ts.toString();
 	p.appendChild(document.createTextNode('Started ' + started + (cause || '')));
 	p.appendChild(document.createElement('br'));
 	p.appendChild(document.createTextNode('More information on the '));
