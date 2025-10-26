@@ -20,7 +20,7 @@ One aspect commonly used to compare PCem and 86Box is the emulation performance.
 
 PCem v15 introduced a rewritten dynamic recompiler, which was primarily aimed at improving emulation performance in games; however, it also caused minor to severe performance regressions in other applications. One example of a regressed application is the (ironically related to a game) **MapEdit** level editor for Wolfenstein 3D, which we measured to lose as much as **85%** emulation speed with the new recompiler on a relatively sensible Pentium 75 setup.
 
-On **x86 host systems**, 86Box uses the **previous recompiler** from PCem versions before v15, with optimizations performed by us, as we have determined that the new one causes too many regressions to be adopted as a sensible default. There is a way for you to try out the new recompiler on 86Box, though: go to our [experimental builds page](/builds), find whatever build number you're using ([here's 7600](/builds#7600), the release build for v5.0) and download the **New Recompiler (beta)** variant that's right for your host operating system.
+On **x86 host systems**, 86Box uses the **previous recompiler** from PCem versions before v15, with optimizations performed by us, as we have determined that the new one causes too many regressions to be adopted as a sensible default. There is a way for you to try out the new recompiler on 86Box, though: go to our [experimental builds page](/builds), find whatever build number you're using ([here's 8000](/builds#8000), the release build for v5.2) and download the **New Recompiler (beta)** variant that's right for your host operating system.
 
 On the other hand, **ARM host systems** always use the new recompiler, as the old one has not received an ARM version. It's worth noting both recompiler variants for macOS are **universal binaries**; the old recompiler one automatically switches over to the new recompiler when running on Apple Silicon.
 
@@ -35,7 +35,7 @@ In addition to taking fewer shortcuts, 86Box also tries to follow the specificat
 
 ## Machine manager
 
-After years of requests, 86Box v5.0 finally brings a preview for a built-in manager, which allows you to keep and run multiple emulated machine configurations from one place. As with PCem, open 86Box directly to start the manager. You can also use [**Avalonia 86**](https://github.com/notBald/Avalonia86) or other manager applications developed by the community.
+After years of requests, 86Box v5.0 finally brought a preview for a built-in manager, which allows you to keep and run multiple emulated machine configurations from one place. As with PCem, open 86Box directly to start the manager. You can also use [**Avalonia 86**](https://github.com/notBald/Avalonia86) or other manager applications developed by the community.
 
 There is **no migration path** for configuration files, as the format is too different. You will have to reconfigure your emulated machine on 86Box, but that's a nice opportunity to double-check your configuration while also checking out our features. More on the differences between PCem and 86Box in the configuration department later.
 
@@ -43,7 +43,7 @@ There is **no migration path** for configuration files, as the format is too dif
 
 ## Machine list
 
-86Box has most of the machines PCem emulates, though we have removed, renamed and/or recategorized some of them for various reasons. The table below (make sure to scroll down) provides a reference for **v5.0**.
+86Box has most of the machines PCem emulates, though we have removed, renamed and/or recategorized some of them for various reasons. The table below (make sure to scroll down) provides a reference for **v5.2**.
 
 <div class="scroll td2nowrap" markdown="block">
 
@@ -54,9 +54,9 @@ There is **no migration path** for configuration files, as the format is too dif
 | [8088] Compaq Portable Plus | 8088:<br />[8088] Compaq Portable | |
 | [8088] DTK XT clone | 8088:<br />[8088] DTK PIM-TB10-Z | |
 | [8088] Generic XT clone | 8088:<br />[8088] Generic XT clone | |
-| [8088] IBM PC | 8088:<br />[8088] IBM PC (1981/1982) | The 1981 and 1982 variants have [different BIOS versions and memory size limits](https://86box.readthedocs.io/en/v5.0/hardware/machinespecific.html#ibmpc). |
+| [8088] IBM PC | 8088:<br />[8088] IBM PC (1981/1982) | The 1981 and 1982 variants have [different BIOS versions and memory size limits](https://86box.readthedocs.io/en/v5.2/hardware/machinespecific.html#ibmpc). |
 | [8088] IBM PCjr | 8088:<br />[8088] IBM PCjr | |
-| [8088] IBM XT | 8088:<br />[8088] IBM XT (1982/1986) | The 1982 and 1986 variants have [different BIOS versions and memory size limits](https://86box.readthedocs.io/en/v5.0/hardware/machinespecific.html#ibmxt). |
+| [8088] IBM XT | 8088:<br />[8088] IBM XT (1982/1986) | The 1982 and 1986 variants have [different BIOS versions and memory size limits](https://86box.readthedocs.io/en/v5.2/hardware/machinespecific.html#ibmxt). |
 | [8088] Juko XT clone | 8088:<br />[8088] Juko ST | |
 | [8088] Leading Edge Model M | - | Not implemented yet. |
 | [8088] NCR PC4i | 8088:<br />[8088] NCR PC4i | 86Box emulates the NCR Graphics Adapter (NGA) that went with this machine. |
@@ -195,8 +195,8 @@ The 86Box settings interface is designed to be easy to navigate, though you shou
   * CD-ROM drives in the **Floppy & CD-ROM drives** page;
   * Iomega Zip drives (86Box adds Zip 250 support) as removable disks in the **Other removable devices** page;
   * 86Box adds magneto-optical drives also in the **Other removable devices** page.
-* IDE drives are represented by a channel:device index, instead of a drive index or location like "Primary Master". See [our documentation](https://86box.readthedocs.io/en/v5.0/settings/hdd.html#adding-a-new-disk) for more information.
-  * IDE channels 2 and 3 correspond to [tertiary and quaternary IDE controllers](https://86box.readthedocs.io/en/v5.0/hardware/ideterqua.html), which can be added through the **Storage controllers** page. PnP Sound Blaster cards with IDE capability also claim the quaternary channel.
+* IDE drives are represented by a channel:device index, instead of a drive index or location like "Primary Master". See [our documentation](https://86box.readthedocs.io/en/v5.2/settings/hdd.html#adding-a-new-disk) for more information.
+  * IDE channels 2 and 3 correspond to [tertiary and quaternary IDE controllers](https://86box.readthedocs.io/en/v5.2/hardware/ideterqua.html), which can be added through the **Storage controllers** page. PnP Sound Blaster cards with IDE capability also claim the quaternary channel.
 * 86Box supports using IDE and SCSI simultaneously. IDE is automatically enabled on machines with it, and up to 4 SCSI controllers can be installed through the **Storage controllers** page.
 * The **CD Model** and **CD Speed** options are configurable for each individual drive in the **Floppy & CD-ROM drives** page, as **Type** and **Speed** respectively.
 
@@ -207,26 +207,26 @@ The 86Box settings interface is designed to be easy to navigate, though you shou
 
 ### Network
 
-* 86Box supports three networking modes, detailed in [our documentation](https://86box.readthedocs.io/en/v5.0/hardware/network.html):
+* 86Box supports four networking modes, detailed in [our documentation](https://86box.readthedocs.io/en/v5.2/hardware/network.html):
   * **PCap** allows for a bridged connection to a wired Ethernet adapter on the host through `pcap` libraries (such as [Npcap](https://nmap.org/npcap/) on Windows).
   * **SLiRP** behaves just like PCem's private network, with **port forwarding** available as an added advanced feature.
-  * **VDE** (not available on Windows) can create a virtual network connecting 86Box instances, other emulators and real network interfaces.
+  * **VDE** and **TAP** (both not available on Windows) can create a virtual network connecting 86Box instances, other emulators and real network interfaces.
 
 ---
 
 ## User interface
 
-The 86Box user interface has a lot more going on. The [menu bar](https://86box.readthedocs.io/en/v5.0/usage/menubar.html) contains some options, while others are in the **Settings** window, and media controls are found in the **Media menu**. The [toolbar](https://86box.readthedocs.io/en/v5.0/usage/toolbar.html) contains shortcuts for common actions and the emulation speed indicator. The [status bar](https://86box.readthedocs.io/en/v5.0/usage/statusbar.html) contains indicators for activity, keyboard lock lights and display refresh rate, with the same controls as the Media menu also being accessible by clicking the media icons. While we don't have the **Machine** window, a lot of what it provides is accessible through other means on 86Box.
+The 86Box user interface has a lot more going on. The [menu bar](https://86box.readthedocs.io/en/v5.2/usage/menubar.html) contains some options, while others are in the **Settings** window, and media controls are found in the **Media menu**. The [toolbar](https://86box.readthedocs.io/en/v5.2/usage/toolbar.html) contains shortcuts for common actions and the emulation speed indicator. The [status bar](https://86box.readthedocs.io/en/v5.2/usage/statusbar.html) contains indicators for activity, keyboard lock lights and display refresh rate, with the same controls as the Media menu also being accessible by clicking the media icons. While we don't have the **Machine** window, a lot of what it provides is accessible through other means on 86Box.
 
 {% include image.html url="/assets/images/pcem-migration/media.png" description="Media controls through the Media menu and status bar." %}
 
-As of 86Box v5.0, the key combination to release mouse capture is the same **Ctrl+End** as PCem on all host operating systems; previous 86Box versions used F8+F12 on Windows hosts. You can also use the middle mouse button to release capture (unless a [three-button or wheel mouse](#input) is configured) and even [customize the keyboard shortcuts](https://86box.readthedocs.io/en/v5.0/settings/input.html#key-bindings) for mouse release and several other emulator functions.
+As of 86Box v5.0, the key combination to release mouse capture is the same **Ctrl+End** as PCem on all host operating systems; previous 86Box versions used F8+F12 on Windows hosts. You can also use the middle mouse button to release capture (unless a [three-button or wheel mouse](#input) is configured) and even [customize the keyboard shortcuts](https://86box.readthedocs.io/en/v5.2/settings/input.html#key-bindings) for mouse release and several other emulator functions.
 
 ---
 
 ## Media
 
-86Box is quite a bit different in the media department as well. More disk image formats are supported, including our own [**86F**](https://86box.readthedocs.io/en/v5.0/dev/formats/86f.html) format for floppy bitstream images. Unlimited hard drives (the controllers are the limit) and up to 4 removable drives of **each type** (floppy, CD-ROM, removable disk, MO) can be installed, with each removable drive getting its own entry on the **Media menu** and **status bar**.
+86Box is quite a bit different in the media department as well. More disk image formats are supported, including our own [**86F**](https://86box.readthedocs.io/en/v5.2/dev/formats/86f.html) format for floppy bitstream images. Unlimited hard disks (the controllers are the limit) and up to 4 removable drives of **each type** (floppy, CD-ROM, removable disk, MO) can be installed, with each removable drive getting its own entry on the **Media menu** and **status bar**.
 
 ### Limited host CD-ROM passthrough
 
