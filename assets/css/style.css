@@ -278,15 +278,17 @@ div.scroll > table > thead > tr > th {
 div.td2nowrap > table > tbody > tr > td:nth-child(2) {
 	white-space: nowrap;
 }
-code, div.highlight {
+code {
 	font-size: 0.95em;
+}
+:not(pre.highlight) > code, div.highlight {
 	background: #404040;
 }
 code {
 	border-radius: 4px;
 	padding: 0 4px;
 }
-div:has(div.highlight) {
+div.highlighter-rouge {
 	overflow-x: hidden;
 }
 div.highlight {

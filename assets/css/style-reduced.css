@@ -154,8 +154,25 @@ th, td {
 code {
 	font-size: 11pt;
 	background: #404040;
-	border-radius: 3pt; /* N/A on IE6 */
-	padding: 0pt 3pt;
+	border-radius: 4px; /* N/A on IE6 */
+	padding: 0pt 4px;
+}
+pre.highlight > code {
+	background: #202020; /* manual override instead of :not */
+}
+div.highlighter-rouge {
+	width: 100%;
+	overflow-x: scroll; /* auto results in overlapping scrollbar */
+}
+div.highlight {
+	border-radius: 8px; /* N/A on IE6 */
+}
+pre.highlight {
+	margin: 0;
+	padding: 6px 8px;
+}
+pre.highlight > code {
+	padding: 0;
 }
 iframe {
 	display: block;
