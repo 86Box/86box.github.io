@@ -45,8 +45,6 @@ There is **no migration path** for configuration files, as the format is too dif
 
 86Box has most of the machines PCem emulates, though we have removed, renamed and/or recategorized some of them for various reasons. The table below (make sure to scroll down) provides a reference for **v5.2**.
 
-<div class="scroll td2nowrap" markdown="block">
-
 | PCem name | 86Box category and name | Notes |
 |-----------|-------------------------|-------|
 | [8088] AMI XT clone | 8088:<br />[8088] AMI XT clone | |
@@ -142,8 +140,7 @@ There is **no migration path** for configuration files, as the format is too dif
 | [Super 7] FIC VA-503+ | Super Socket 7:<br />[VIA MVP3] FIC VA-503+ | Not to be confused with the FIC VA-503**A**, which is a very different board. |
 | [Socket 8] Intel VS440FX | Socket 8:<br />[i440FX] Intel VS440FX | See [PIIX southbridge mismatch](#piix-southbridge-mismatch). |
 | [Slot 1] Gigabyte GA-686BX | Slot 1:<br />[i440BX] Gigabyte GA-686BX | |
-
-</div>
+{: .scroll .td2nowrap}
 
 <div>&nbsp;</div>
 

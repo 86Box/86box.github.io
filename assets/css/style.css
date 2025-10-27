@@ -193,11 +193,11 @@ li > ul, li > ol {
 sup {
 	font-size: x-small;
 }
-sup > a.footnote::before {
+sup a.footnote::before {
 	content: "[";
 	margin-left: 1.5px;
 }
-sup > a.footnote::after {
+sup a.footnote::after {
 	content: "]";
 }
 li:target, sup:target {
@@ -251,14 +251,22 @@ span.emoji {
 				 EmojiOne,            /* fonts are installed and the browser supports them (not Chrome */
 				 Twitter Color Emoji; /* as of writing; Firefox provides and uses Twemoji Mozilla) */
 }
-div.scroll {
-	max-height: min(500px, 67vh);
-	padding-right: 1px; /* make border less ugly on Chrome on Windows */
-	overflow-x: auto;
-	overflow-y: scroll;
-}
 table {
 	border: 1px solid #808080;
+}
+@media (max-width: 768px) {
+	table {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+	}
+}
+table.scroll {
+	display: block;
+	width: 100%;
+	max-height: min(500px, 67vh);
+	overflow-x: auto;
+	overflow-y: scroll;
 }
 tr:nth-child(odd) {
 	background: #1c293a;
@@ -270,18 +278,18 @@ th, td {
 	border: 1px solid #808080;
 	padding: 5px;
 }
-div.scroll > table > thead > tr > th {
+div.scroll th {
 	position: sticky;
 	top: 0;
 	background: #1c293a;
 }
-div.td2nowrap > table > tbody > tr > td:nth-child(2) {
+.td2nowrap td:nth-child(2) {
 	white-space: nowrap;
 }
 code {
 	font-size: 0.95em;
 }
-:not(pre.highlight) > code, div.highlight {
+:not(pre.highlight) > code {
 	background: #404040;
 }
 code {
@@ -299,7 +307,7 @@ pre.highlight {
 	margin: 0;
 	padding: 6px 8px;
 }
-pre.highlight > code {
+pre.highlight code {
 	padding: 0;
 }
 pre.highlight, code {
