@@ -114,8 +114,10 @@ function listBuild(data) {
 		if (window.inBisectMode)
 			return bisectNextBuild(buildNumberVal);
 
-		buildBins.firstChild.innerHTML = 'This build failed to compile, please try a different one.';
-		return;
+		if (!data['inProgress']) {
+			buildBins.firstChild.innerHTML = 'This build failed to compile, please try a different one.';
+			return;
+		}
 	}
 
 	/* Display build flag buttons when in bisect mode. */
