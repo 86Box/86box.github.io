@@ -19,7 +19,7 @@ Features
 Downloads
 ---------
 
-The latest stable version of 86Box is **v5.2**, which was released on October 26, 2025, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/latest).
+The latest stable version of 86Box is **v5.3**, which was released on December 21, 2025, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/latest).
 
 We also offer [experimental builds](/builds), which are built from the latest source code, but may not be as stable and/or performant as release builds.
 
@@ -29,8 +29,8 @@ Minimum system requirements and recommendations
 * Intel Core 2 or AMD Athlon 64 processor or newer
 * At least 4 GB of RAM or higher
 * **Windows version:** Windows 7 Service Pack 1 or later
-* **macOS version:** macOS 10.13 High Sierra or newer
 * **Linux version:** Ubuntu 16.04, Debian 9.0 or other distributions from 2016 onwards
+* **macOS version:** macOS 10.13 High Sierra or newer
 
 Performance may vary depending on host and guest configuration. Most emulation logic is executed in a single thread. Therefore, systems with greater IPC (instructions per clock) capacity should be able to emulate higher clock speeds.
 
@@ -40,7 +40,7 @@ For easier handling of multiple virtual machines, we recommend using a manager a
 * [86Box Manager X](https://github.com/RetBox/86BoxManagerX) by [xafero](https://github.com/xafero) (Cross platform Port of 86Box Manager using Avalonia)
 * [sl86](https://github.com/DDXofficial/sl86) by [DDX](https://github.com/DDXofficial) (Command-line 86Box machine manager written in Python)
 * [Linbox-qt5](https://github.com/Dungeonseeker/linbox-qt5) by [Dungeonseeker](https://github.com/Dungeonseeker/) (Linux focused, should work on Windows though untested)
-* [MacBox for 86Box](https://github.com/Moonif/MacBox) by [Moonif](https://github.com/Moonif) (MacOS only)
+* [MacBox for 86Box](https://github.com/Moonif/MacBox) by [Moonif](https://github.com/Moonif) (macOS only)
 
 **NEW:** 86Box 5.0 introduces a new built-in virtual machine manager as a preview! Try it out by launching the 86Box executable directly with no command line arguments. We look forward to hearing your feedback!
 
