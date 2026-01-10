@@ -68,6 +68,10 @@ Visit our IRC channel with an [installed IRC client](irc://irc.86box.net/#86Box)
 
 </div>
 
+[Forum: SoftHistory](https://forum.softhistory.org/)
+
+[Wiki: SoftHistory](https://wiki.softhistory.org/)
+
 [Twitter: @86BoxEmulator](https://twitter.com/86BoxEmulator)
 
 [YouTube: 86Box](https://youtube.com/c/86Box)
