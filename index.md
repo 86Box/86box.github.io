@@ -87,3 +87,9 @@ Donations
 ---------
 
 We do not charge you for the emulator but [donations](https://paypal.me/86Box) are still welcome. You can also support the project on [Patreon](https://www.patreon.com/86box).
+
+Acknowledgments
+---------------
+
+### Powered by
+[![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSource)
