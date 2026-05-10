@@ -1,4 +1,4 @@
-{{ include.separator | default: "<hr />" }}
+{{ include.separator | default: "<hr>" }}
 <figure class="image">
 {%- if include.heading %}
   <a name="{{ include.heading | slugify }}">
@@ -10,7 +10,7 @@
 {% if include.tooltip or include.heading %}
       title="{{ include.tooltip | default: include.heading }}"
 {% endif %}
-      />
+      >
 {%- if include.heading %}
   </a>
 {%- endif %}

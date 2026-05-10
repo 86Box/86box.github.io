@@ -2,28 +2,28 @@
 <html lang="en">
 	<head>
 		<title>86Box | {{ title_override | default: page.title }}</title>
-		<meta charset="utf-8" />
+		<meta charset="utf-8">
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:creator" content="86Box" />
-		<meta name="twitter:description" content="{{ page.description }}" />
-		<meta property="og:site_name" content="86Box" />
-		<meta property="og:title" content="{{ page.title }}" />
+		<meta name="twitter:creator" content="86Box">
+		<meta name="twitter:description" content="{{ page.description }}">
+		<meta property="og:site_name" content="86Box">
+		<meta property="og:title" content="{{ page.title }}">
 {%- if page.layout == "post" %}
-		<meta property="og:type" content="article" />
-		<meta property="article:published_time" content="{{ page.date | date: "%FT%TZ" }}" />
+		<meta property="og:type" content="article">
+		<meta property="article:published_time" content="{{ page.date | date: "%FT%TZ" }}">
 {%- for author in page.authors %}
-		<meta property="article:author" content="https://github.com/{{ author }}" />
-		<meta property="article:author:username" content="{{ author }}" />
+		<meta property="article:author" content="https://github.com/{{ author }}">
+		<meta property="article:author:username" content="{{ author }}">
 {%- endfor -%}
 {%- else %}
-		<meta property="og:type" content="website" />
+		<meta property="og:type" content="website">
 {%- endif %}
-		<meta property="og:image" itemprop="image" content="{{ site.url }}{{ page.image | default: "/assets/images/logo.png" }}" />
-		<meta property="og:description" content="{{ page.description }}" />
+		<meta property="og:image" itemprop="image" content="{{ site.url }}{{ page.image | default: "/assets/images/logo.png" }}">
+		<meta property="og:description" content="{{ page.description }}">
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="icon" href="/assets/images/favicon.png" type="image/png">
 		<meta name="theme-color" content="#ff4848">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--[if !IE]><!-->
 			<link rel="stylesheet" href="/assets/css/style.css" media="screen">
 			<link rel="stylesheet" href="/assets/css/style-print.css" media="print">
@@ -37,14 +37,14 @@
 			<link rel="stylesheet" href="/assets/css/style-print.css" media="print">
 		<![endif]-->
 		<link rel="stylesheet" href="/assets/css/native.css">
-		<link rel="alternate" type="application/atom+xml" title="Blog posts" href="/feed.xml" />
+		<link rel="alternate" type="application/atom+xml" title="Blog posts" href="/feed.xml">
 	</head>
 	<body>
 {%- if jekyll.environment != "production" %}
 		<h1 style="position: absolute; left: 0; width: 100%; box-sizing: border-box; color: #000; background-color: #ff0; text-align: center; padding: 10px; border-bottom: 3px dashed #000; margin: 0;">Staging Website - not for public consumption</h1>
 {%- endif %}
 		<header>
-			<a href="/"><img src="/assets/images/logo.png" id="logo" alt="86Box logo" /></a>
+			<a href="/"><img src="/assets/images/logo.png" id="logo" alt="86Box logo"></a>
 		</header>
 		<nav>
 			<a class="navlink" href="/#downloads">Downloads</a>
