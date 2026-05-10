@@ -18,7 +18,7 @@ function addEvent(elem, evtName, func) {
 		elem[evtName] = func;
 	}
 }
-if (!Array.prototype.indexOf) {
+if (!Array.prototype.indexOf)
 	Array.prototype.indexOf = function(elem, start) {
 		for (var i = start || 0; i < this.length; i++) {
 			if (this[i] == elem)
@@ -26,19 +26,36 @@ if (!Array.prototype.indexOf) {
 		}
 		return -1;
 	};
-}
-if (!Array.prototype.push) {
+if (!Array.prototype.push)
 	Array.prototype.push = function(elem) {
 		this[this.length] = elem;
 	};
-}
-if (!Array.prototype.unshift) {
+if (!Array.prototype.unshift)
 	Array.prototype.unshift = function(elem) {
 		for (var i = this.length; i; i--)
 			this[i] = this[i - 1];
 		this[0] = elem;
 	};
-}
+if (!document.getElementById)
+	document.getElementById = function(id) {
+		if (document.all)
+			return document.all[id];
+	};
+if (!document.getElementsByTagName)
+	document.getElementsByTagName = (document.all && document.all.tags) || function(tagName) { return []; };
+if (!document.getElementsByClassName)
+	document.getElementsByClassName = function(className) {
+		var ret = [];
+		if (document.all) {
+			var elem;
+			for (var i = 0; i < document.all.length; i++) {
+				elem = document.all[i];
+				if (elem.className && (elem.className.split(' ').indexOf(className) > -1))
+					ret.push(elem);
+			}
+		}
+		return ret;
+	};
 var imgCache = {};
 function getNaturalWidth(img) { /* for the auto-sizing expression on the retro CSS */
 	if (img.naturalWidth)

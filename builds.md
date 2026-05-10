@@ -65,6 +65,10 @@ function submitBuild() {
 	var buildBins = document.getElementById('buildbins');
 	buildBins.innerHTML = '';
 	var p = document.createElement('p');
+	if (!p) { /* returns null on IE4 */
+		buildBins.innerHTML = 'Browser not supported.';
+		return;
+	}
 	p.appendChild(document.createTextNode('Loading build information...'));
 	buildBins.appendChild(p);
 	scrollBuild();
@@ -231,7 +235,7 @@ function listBuild(data) {
 			else
 				osArch = 'win32';
 		} else if (ua.match(/Mac OS X/i)) {
-			if (!ua.match(/Intel Mac OS X/i)) /* not all browsers (if any at all) are reporting AS... */
+			if (!ua.match(/Intel Mac OS X/i)) /* not all browsers (if any at all) are reporting ARM */
 				osArch = 'macarm64';
 			else
 				osArch = 'mac64';
