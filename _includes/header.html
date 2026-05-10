@@ -8,16 +8,16 @@
 		<meta name="twitter:description" content="{{ page.description }}" />
 		<meta property="og:site_name" content="86Box" />
 		<meta property="og:title" content="{{ page.title }}" />
-{% if page.layout == "post" %}
+{%- if page.layout == "post" %}
 		<meta property="og:type" content="article" />
 		<meta property="article:published_time" content="{{ page.date | date: "%FT%TZ" }}" />
-{% for author in page.authors %}
+{%- for author in page.authors %}
 		<meta property="article:author" content="https://github.com/{{ author }}" />
 		<meta property="article:author:username" content="{{ author }}" />
-{% endfor %}
-{% else %}
+{%- endfor -%}
+{%- else %}
 		<meta property="og:type" content="website" />
-{% endif %}
+{%- endif %}
 		<meta property="og:image" itemprop="image" content="{{ site.url }}{{ page.image | default: "/assets/images/logo.png" }}" />
 		<meta property="og:description" content="{{ page.description }}" />
 		<link rel="shortcut icon" href="/favicon.ico">
@@ -42,7 +42,7 @@
 	<body>
 {%- if jekyll.environment != "production" %}
 		<h1 style="position: absolute; left: 0; width: 100%; box-sizing: border-box; color: #000; background-color: #ff0; text-align: center; padding: 10px; border-bottom: 3px dashed #000; margin: 0;">Staging Website - not for public consumption</h1>
-{% endif %}
+{%- endif %}
 		<header>
 			<a href="/"><img src="/assets/images/logo.png" id="logo" alt="86Box logo" /></a>
 		</header>
