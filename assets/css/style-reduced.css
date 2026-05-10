@@ -46,7 +46,7 @@ div#footer {
 }
 
 /* Buttons */
-button {
+button, p#jetbrains > a > img {
 	color: #0f1934;
 	background-color: #f9f9f9;
 	font: bold 16px "Source Code Pro", "Courier New", "Courier", monospace;
@@ -70,11 +70,11 @@ a:hover {
 a:active {
 	color: #cecece;
 }
+
+/* Pages */
 div#socialnew {
 	display: none;
 }
-
-/* Pages */
 div#bisectform, p#bisectbtns {
 	display: none;
 }

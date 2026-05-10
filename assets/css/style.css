@@ -119,7 +119,7 @@ body > footer > div > #reduced {
 }
 
 /* Buttons */
-button {
+button, p#jetbrains > a > img {
 	color: #0f1934;
 	background-color: #f9f9f9;
 	font: bold 16px "Source Code Pro", monospace;
@@ -148,11 +148,11 @@ a:hover {
 a:active {
 	color: #cecece;
 }
+
+/* Pages */
 div#socialold {
 	display: none;
 }
-
-/* Pages */
 div#bisectform, p#bisectbtns {
 	display: none;
 }
