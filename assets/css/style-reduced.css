@@ -55,6 +55,7 @@ button, p#jetbrains > a > img {
 	border: none;
 	border-radius: 4px; /* N/A on IE6 */
 	padding: 9px 9px;
+	margin-top: 0.25em;
 	border: 1px solid #f9f9f9;
 }
 
