@@ -130,7 +130,7 @@ function listBuild(data) {
 
 	/* Sort directory structure. */
 	var dynarecNames = ['Old Recompiler (recommended)', 'New Recompiler (beta)', 'Old Recompiler Optimized (not recommended)', 'No Dynamic Recompiler'];
-	var osPrefixes = ['Windows', 'macOS', 'Linux'];
+	var osPrefixes = ['Windows', 'Linux', 'macOS'];
 	var archSuffixes = ['Universal (Intel and Apple Silicon)', 'x64 (64-bit)', 'x86 (32-bit)', 'ARM (64-bit)', 'ARM (32-bit)'];
 	if (data['artifacts'].sort) {
 		data['artifacts'].sort(function(a, b) {
