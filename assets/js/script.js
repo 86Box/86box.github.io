@@ -38,11 +38,12 @@ if (!Array.prototype.unshift)
 	};
 if (!document.getElementById)
 	document.getElementById = function(id) {
-		if (document.all)
-			return document.all[id];
+		return document.all && document.all[id];
 	};
 if (!document.getElementsByTagName)
-	document.getElementsByTagName = (document.all && document.all.tags) || function(tagName) { return []; };
+	document.getElementsByTagName = function(tagName) {
+		return document.all ? document.all.tags(tagName) : [];
+	};
 if (!document.getElementsByClassName)
 	document.getElementsByClassName = function(className) {
 		var ret = [];
