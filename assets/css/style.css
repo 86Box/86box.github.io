@@ -180,6 +180,9 @@ div#buildbins > p {
 p, ul, ol {
 	margin: 0.65em 0;
 }
+ul, ol {
+	padding-left: 20px;
+}
 li > ul, li > ol {
 	margin-top: 0.325em;
 }

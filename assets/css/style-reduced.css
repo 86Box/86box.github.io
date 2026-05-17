@@ -90,6 +90,10 @@ span#bisecttry {
 }
 
 /* Blog */
+ul, ol {
+	margin-left: 0;
+	padding-left: 20px;
+}
 sup {
 	font-size: x-small;
 }
