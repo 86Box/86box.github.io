@@ -93,5 +93,5 @@ Acknowledgments
 
 ### Powered by
 
-[![JetBrains logo]({{ site.data.env[jekyll.environment].ext_asset_base }}/resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](//jb.gg/OpenSource)
+[![JetBrains]({{ site.data.env[jekyll.environment].ext_asset_base }}/resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](//jb.gg/OpenSource)
 {: #jetbrains}
