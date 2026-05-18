@@ -5,9 +5,9 @@ title: "Experimental builds"
 
 # Experimental builds
 
-These pre-release testing builds are made from the latest 86Box source code on [GitHub](https://github.com/86Box/86Box). They may contain bugs, unfinished features, reduced performance or other issues.
+These pre-release testing builds are made from the latest 86Box source code on [GitHub](//github.com/86Box/86Box). They may contain bugs, unfinished features, reduced performance or other issues.
 
-Most people should use the regular [**release builds**](https://github.com/86Box/86Box/releases/latest) instead; however, if you run into an issue with those, you can check if it's fixed on the latest testing build<span id="below"> displayed below</span>. The **Bisect** button can help you locate the exact build in which the issue started occurring.
+Most people should use the regular [**release builds**](//github.com/86Box/86Box/releases/latest) instead; however, if you run into an issue with those, you can check if it's fixed on the latest testing build<span id="below"> displayed below</span>. The **Bisect** button can help you locate the exact build in which the issue started occurring.
 
 ---
 
@@ -439,7 +439,7 @@ function updateBisect(btn) { /* delayed on keypress to let the input value updat
 }
 </script>
 
-<noscript><p><b>This page requires JavaScript to work.</b> You can download the latest build directly from the <a href="https://ci.86box.net/job/86Box/lastSuccessfulBuild/">Jenkins page</a>.</p></noscript>
+<noscript><p><b>This page requires JavaScript to work.</b> You can download the latest build directly from the <a href="//ci.86box.net/job/86Box/lastSuccessfulBuild/">Jenkins page</a>.</p></noscript>
 <form id="buildform" action="#" onsubmit="return false">
 <div id="bisectform">
 	<b>Good build:</b> <input type="text" inputmode="numeric" pattern="#?\d*" id="goodbuild" size="4" class="bisectgood" oninput="updateBisect()" onkeypress="setTimeout(updateBisect, 1)" onchange="updateBisect()" /><br />

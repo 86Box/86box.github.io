@@ -19,7 +19,7 @@ Features
 Downloads
 ---------
 
-The latest stable version of 86Box is **v5.3**, which was released on December 21, 2025, and is available from our [GitHub repository](https://github.com/86Box/86Box/releases/latest). A beta preview of **v6.0** is [available](https://github.com/86Box/86Box/releases/v6.0-beta).
+The latest stable version of 86Box is **v5.3**, which was released on December 21, 2025, and is available from our [GitHub repository](//github.com/86Box/86Box/releases/latest). A beta preview of **v6.0** is [available](//github.com/86Box/86Box/releases/v6.0-beta).
 
 We also offer [experimental builds](/builds), which are built from the latest source code, but may not be as stable and/or performant as release builds.
 
@@ -36,11 +36,11 @@ Performance may vary depending on host and guest configuration. Most emulation l
 
 For easier handling of multiple virtual machines, we recommend using a manager application:
 
-* [Avalonia 86](https://github.com/notBald/Avalonia86) by [notBald](https://github.com/notBald) (Windows and Linux)
-* [86Box Manager X](https://github.com/RetBox/86BoxManagerX) by [xafero](https://github.com/xafero) (Cross platform Port of 86Box Manager using Avalonia)
-* [sl86](https://github.com/DDXofficial/sl86) by [DDX](https://github.com/DDXofficial) (Command-line 86Box machine manager written in Python)
-* [Linbox-qt5](https://github.com/Dungeonseeker/linbox-qt5) by [Dungeonseeker](https://github.com/Dungeonseeker/) (Linux focused, should work on Windows though untested)
-* [MacBox for 86Box](https://github.com/Moonif/MacBox) by [Moonif](https://github.com/Moonif) (macOS only)
+* [Avalonia 86](//github.com/notBald/Avalonia86) by [notBald](//github.com/notBald) (Windows and Linux)
+* [86Box Manager X](//github.com/RetBox/86BoxManagerX) by [xafero](//github.com/xafero) (Cross platform Port of 86Box Manager using Avalonia)
+* [sl86](//github.com/DDXofficial/sl86) by [DDX](//github.com/DDXofficial) (Command-line 86Box machine manager written in Python)
+* [Linbox-qt5](//github.com/Dungeonseeker/linbox-qt5) by [Dungeonseeker](//github.com/Dungeonseeker/) (Linux focused, should work on Windows though untested)
+* [MacBox for 86Box](//github.com/Moonif/MacBox) by [Moonif](//github.com/Moonif) (macOS only)
 
 **NEW:** 86Box v5.0 introduces a new built-in virtual machine manager as a preview! Try it out by launching the 86Box executable directly with no command line arguments. We look forward to hearing your feedback!
 
@@ -49,7 +49,7 @@ To use 86Box on its own, bypassing the manager, use the `-P`/`--vmpath` command 
 Getting started
 ---------------
 
-See [our documentation](https://86box.readthedocs.io/en/latest/index.html) for an overview of the emulator's features and user interface.
+See [our documentation](//86box.readthedocs.io/en/latest/index.html) for an overview of the emulator's features and user interface.
 
 <a name="social" />Get in touch
 -------------------------------
@@ -58,9 +58,9 @@ You can reach us on our IRC channel, Discord server or Twitter to discuss anythi
 
 <div id="socialnew" markdown="block">
 
-[![Visit our IRC channel]({{ external_asset }}/kiwiirc.com/buttons/irc.86box.net/86Box.png)](https://kiwiirc.com/client/irc.86box.net/?nick=website?#86Box)
+[![Visit our IRC channel]({{ external_asset }}/kiwiirc.com/buttons/irc.86box.net/86Box.png)](//kiwiirc.com/client/irc.86box.net/?nick=website?#86Box)
 
-[![Visit our Discord server]({{ external_asset }}/discordapp.com/api/guilds/262614059009048590/embed.png)](https://discord.gg/v5fCgFw)
+[![Visit our Discord server]({{ external_asset }}/discordapp.com/api/guilds/262614059009048590/embed.png)](//discord.gg/v5fCgFw)
 
 </div><div id="socialold" markdown="block">
 
@@ -68,30 +68,30 @@ Visit our IRC channel with an [installed IRC client](irc://irc.86box.net/#86Box)
 
 </div>
 
-[Forum: SoftHistory](https://forum.softhistory.org/)
+[Forum: SoftHistory](//forum.softhistory.org/)
 
-[Wiki: SoftHistory](https://wiki.softhistory.org/)
+[Wiki: SoftHistory](//wiki.softhistory.org/)
 
-[Twitter: @86BoxEmulator](https://twitter.com/86BoxEmulator)
+[Twitter: @86BoxEmulator](//twitter.com/86BoxEmulator)
 
-[YouTube: 86Box](https://youtube.com/c/86Box)
+[YouTube: 86Box](//youtube.com/c/86Box)
 
 Licensing
 ---------
 
-86Box is released under the [GNU General Public License, version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) or later. For more information, see the `COPYING` file in the root of the repository.
+86Box is released under the [GNU General Public License, version 2](//www.gnu.org/licenses/old-licenses/gpl-2.0.html) or later. For more information, see the `COPYING` file in the root of the repository.
 
-The emulator can also optionally make use of [munt](https://github.com/munt/munt), [FluidSynth](https://www.fluidsynth.org/), [Ghostscript](https://www.ghostscript.com/) and [Discord Game SDK](https://discord.com/developers/docs/game-sdk/sdk-starter-guide), which are distributed under their respective licenses.
+The emulator can also optionally make use of [munt](//github.com/munt/munt), [FluidSynth](//www.fluidsynth.org/), [Ghostscript](//www.ghostscript.com/) and [Discord Game SDK](//discord.com/developers/docs/game-sdk/sdk-starter-guide), which are distributed under their respective licenses.
 
 Donations
 ---------
 
-We do not charge you for the emulator but [donations](https://paypal.me/86Box) are still welcome. You can also support the project on [Patreon](https://www.patreon.com/86box).
+We do not charge you for the emulator but [donations](//paypal.me/86Box) are still welcome. You can also support the project on [Patreon](//www.patreon.com/86box).
 
 Acknowledgments
 ---------------
 
 ### Powered by
 
-[![JetBrains logo]({{ external_asset }}/resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSource)
+[![JetBrains logo]({{ external_asset }}/resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](//jb.gg/OpenSource)
 {: #jetbrains}
