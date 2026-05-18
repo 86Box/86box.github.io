@@ -58,9 +58,9 @@ You can reach us on our IRC channel, Discord server or Twitter to discuss anythi
 
 <div id="socialnew" markdown="block">
 
-[![Visit our IRC channel](https://kiwiirc.com/buttons/irc.86box.net/86Box.png)](https://kiwiirc.com/client/irc.86box.net/?nick=website?#86Box)
+[![Visit our IRC channel]({{ external_asset }}/kiwiirc.com/buttons/irc.86box.net/86Box.png)](https://kiwiirc.com/client/irc.86box.net/?nick=website?#86Box)
 
-[![Visit our Discord server](https://discordapp.com/api/guilds/262614059009048590/embed.png)](https://discord.gg/v5fCgFw)
+[![Visit our Discord server]({{ external_asset }}/discordapp.com/api/guilds/262614059009048590/embed.png)](https://discord.gg/v5fCgFw)
 
 </div><div id="socialold" markdown="block">
 
@@ -93,5 +93,5 @@ Acknowledgments
 
 ### Powered by
 
-[![JetBrains logo](//resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSource)
+[![JetBrains logo]({{ external_asset }}/resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSource)
 {: #jetbrains}

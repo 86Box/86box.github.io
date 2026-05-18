@@ -1,3 +1,8 @@
+{%- if jekyll.environment == "production" -%}
+{%- assign external_asset = "/noretro" -%}
+{%- else -%}
+{%- assign external_asset = "/" -%}
+{%- endif -%}
 <!doctype html>
 <html lang="en">
 	<head>
@@ -27,7 +32,7 @@
 		<!--[if !IE]><!-->
 			<link rel="stylesheet" href="/assets/css/style-print.css" media="print">
 			<link rel="stylesheet" href="/assets/css/style.css" media="screen">
-			<link rel="stylesheet" href="/assets/css/fonts.css">
+			<link rel="stylesheet" href="{{ external_asset }}/fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap">
 		<!--<![endif]-->
 		<script src="/assets/js/script.js"></script>
 		<!--[if gte IE 5]>
