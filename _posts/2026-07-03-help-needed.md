@@ -40,3 +40,5 @@ Lastly, we are in desperate need of funds to guarantee continued support of the 
 Consider subscribing to our [Patreon](//patreon.com/86box) or doing one-time donations via [PayPal](//paypal.me/86Box) in order to make it possible.
 
 Thanks, have fun with emulation, and thank you for flying 86Box!
+
+Update: We now have a GoFundMe fundraiser for ensuring continued macOS support: <https://www.gofundme.com/f/support-86boxs-future-on-macos>
