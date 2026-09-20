@@ -238,7 +238,7 @@ On top of the Iomega Zip 100, 86Box supports **Zip 250**, **generic removable di
 
 ### Cassette formats
 
-PCem's IBM cassette emulation uses the `.pzx` format, originally designed for ZX Spectrum tapes. 86Box supports the `.cas` format developed as part of [PCE/ibmpc](//www.hampa.ch/pce/), as well as audio recordings in `.wav` or `.pcm` format. The `pzx2wav` tool in [PZX tools](//zxds.raxoft.cz/pzx.html) can potentially convert `.pzx` tapes to `.wav` for 86Box, though we haven't tested that.
+PCem's IBM cassette emulation uses the `.pzx` format, originally designed for ZX Spectrum tapes. 86Box supports the `.cas` format developed as part of [PCE/ibmpc](http://hampa.ch/pce/), as well as audio recordings in `.wav` or `.pcm` format. The `pzx2wav` tool in [PZX tools](//zxds.raxoft.cz/pzx.html) can potentially convert `.pzx` tapes to `.wav` for 86Box, though we haven't tested that.
 
 ---
 
