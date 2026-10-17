@@ -129,7 +129,7 @@ function listBuild(data) {
 		document.getElementById('bisectbtns').style.display = 'block';
 
 	/* Sort directory structure. */
-	var dynarecNames = ['Old Recompiler (recommended)', 'New Recompiler (beta)', 'Old Recompiler Optimized (not recommended)', 'No Dynamic Recompiler'];
+	var dynarecNames = ['Dynamic Recompiler', 'Old Recompiler (recommended)', 'New Recompiler (beta)', 'Old Recompiler Optimized (not recommended)', 'No Dynamic Recompiler'];
 	var osPrefixes = ['Windows', 'Linux', 'macOS'];
 	var archSuffixes = ['Universal (Intel and Apple Silicon)', 'x64 (64-bit)', 'x86 (32-bit)', 'ARM (64-bit)', 'ARM (32-bit)'];
 	if (data['artifacts'].sort) {
@@ -294,9 +294,11 @@ function listBuild(data) {
 	/* Look for OS/architecture nodes on each dynarec. */
 	var found = false;
 	var p;
-	for (var dynarecId = 0; dynarecId < dynarecNames.length; dynarecId++) {
+	for (var dynarecId = -1; dynarecId < dynarecNames.length; dynarecId++) {
 		for (var osId = 0; osId < osNames.length; osId++) {
-			var targetPath = dynarecNames[dynarecId] + '/' + osNames[osId];
+			var targetPath = osNames[osId];
+			if (dynarecNames[dynarecId])
+				targetPath = dynarecNames[dynarecId] + '/' + targetPath;
 			var targetPathElement = pathElements[targetPath];
 			if (!targetPathElement || !targetPathElement.firstChild)
 				continue;
@@ -312,7 +314,10 @@ function listBuild(data) {
 					buildBins.firstChild.appendChild(document.createElement('br'));
 					a = document.createElement('a');
 					a.href = existingLink.href;
-					targetPath = targetPath.replace(/(ARM) \(([0-9]+)-bit\)/, '$1$2').replace(/ \([^\)]+\)|- /g, '').replace('/', ' for ').replace('/', ': ');
+					targetPath = targetPath.replace(/(ARM) \(([0-9]+)-bit\)/, '$1$2').replace(/ \([^\)]+\)|- /g, '')
+					if (dynarecNames[dynarecId])
+						targetPath = targetPath.replace('/', ' for ');
+					targetPath = targetPath.replace('/', ': ');
 					a.appendChild(document.createTextNode(targetPath));
 					buildBins.firstChild.appendChild(a);
 
