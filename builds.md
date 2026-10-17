@@ -118,10 +118,8 @@ function listBuild(data) {
 		if (window.inBisectMode)
 			return bisectNextBuild(buildNumberVal);
 
-		if (!data['inProgress']) {
-			buildBins.firstChild.innerHTML = 'This build failed to compile, please try a different one.';
-			return;
-		}
+		if (!data['inProgress'])
+			alert('Build ' + buildNumberVal + ' failed to compile. As a result, the downloads list will be empty or incomplete.');
 	}
 
 	/* Display build flag buttons when in bisect mode. */
